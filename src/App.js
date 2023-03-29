@@ -1,9 +1,13 @@
 // import logo from './logo.svg';
-import Home from './components/Home';
+import './App.css';
+import React from "react";
+import Login from "./pages/Login";
+import Card from './pages/Card';
 function App() {
   return (
     <>
-    <Home/> 
+      <Login /> 
+      <Card />
     </>
   );
 }

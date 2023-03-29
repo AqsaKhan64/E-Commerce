@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import Grid from '@mui/material/Grid';
 import { Toolbar, Tab, Box, Typography, Button, MenuItem, Card, CardMedia, CardContent, CardActionArea } from '@mui/material'
 import Menu from '@mui/material/Menu';
+import Link from '@mui/material/Link';
 import Nav from '@mui/material/Grid'
 import SearchIcon from '@mui/icons-material/Search';
-
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import img1 from '../images/logo.png.webp'
 import img2 from '../images/bg.webp'
@@ -12,6 +13,11 @@ import img3 from '../images/sec3.webp'
 import img4 from '../images/insta.webp'
 import img5 from '../images/insta1.webp'
 import img6 from '../images/insta2.webp'
+import img7 from '../images/services1.svg'
+import img8 from '../images/services2.svg'
+import img9 from '../images/services3.svg'
+import img10 from '../images/services4.svg'
+import img11 from '../images/logo2_footer.png.webp'
 const Mainnav={
   backgroundColor: "#F2E1D9",
   position: "relative",
@@ -162,6 +168,31 @@ const instaInfo={
 const instaHead={
   fontWeight: "bold",
   marginTop: "10px"
+}
+const service={
+  marginTop: "80px",
+  backgroundColor: "#F2E1D9",
+  padding: "60px",
+}
+const servHead={
+  marginLeft: "50px"
+}
+const footer={
+  backgroundColor: "#1D2547",
+  padding: "100px 80px"
+}
+const fotInfo={
+  marginTop: "30px",
+    lineHeight: "26px"
+}
+const fot={
+  marginLeft: "90px"
+}
+const fot1={
+  marginLeft: "40px"
+}
+const fotPara={
+  textAlign: "center"
 }
 function Home() {
   return (
@@ -329,6 +360,116 @@ function Home() {
       <Grid item lg={4}>
        <img style={instaImg} src={img6}/>
       </Grid>
+    </Grid>
+    <Box style={products}>
+      <Typography variant="h2" style={sec3head}>TOP PICK</Typography>
+      <Typography style={info}>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra <br></br> ornare, eros dolor interdum nulla.</Typography>
+    </Box>
+    <Grid item container style={mainP}>
+    <Grid item lg={4}>
+      <Card style={cardInfo}>
+        <CardActionArea>
+        <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular7.png.webp"/>
+        <CardContent>
+          <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
+          <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+        </CardContent>
+        </CardActionArea>
+      </Card>
+    </Grid>
+    <Grid item lg={4}>
+      <Card  style={cardInfo}>
+        <CardActionArea>
+        <CardMedia sx={{ height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular8.png.webp"/>
+        <CardContent>
+          <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
+          <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+        </CardContent>
+        </CardActionArea>
+      </Card>
+    </Grid>
+    <Grid item lg={4}>
+      <Card  style={cardInfo}>
+        <CardActionArea>
+        <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular9.png.webp"/>
+        <CardContent>
+          <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
+          <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+        </CardContent>
+        </CardActionArea>
+      </Card>
+    </Grid>
+    </Grid>
+    <Grid item container>
+     <Grid item lg={12}>
+      <Box style={sec3Btn}>
+        <Button style={subBtn}>Discover More</Button>
+      </Box>
+     </Grid>
+    </Grid>
+    <Grid item container style={service}>
+      <Grid item sm={3} >
+        <Box style={servHead}>
+        <img src={img7}/>
+        <Typography variant="h6">Fast & Free Delivery</Typography>
+        <Typography variant="p">Free delivery on all orders</Typography>
+        </Box>
+      </Grid>
+      <Grid item sm={3}>
+        <img src={img8}/>
+        <Typography variant="h6">Secure Payment</Typography>
+        <Typography variant="p">Free delivery on all orders</Typography>
+      </Grid>
+      <Grid item sm={3}>
+        <img src={img9}/>
+        <Typography variant="h6">Money Back Guarantee</Typography>
+        <Typography variant="p">Free delivery on all orders</Typography>
+      </Grid>
+      <Grid item sm={3}>
+        <img src={img10}/>
+        <Typography variant="h6">Online Support</Typography>
+        <Typography variant="p">Free delivery on all orders</Typography>
+      </Grid>
+    </Grid>
+    <Grid item container style={footer}>
+      <Grid item sm={3}>
+       <img src={img11}/>
+       <Typography sx={{color: "white", mt:2}}>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</Typography>
+       <Box>
+        <FacebookOutlinedIcon/>
+       </Box>
+      </Grid>
+      <Grid item sm={3}>
+        <Box style={fot}>
+       <Typography sx={{color: "white", mt:3}} variant="h6">Quick links</Typography>
+       <Box style={fotInfo}>
+       <Link sx={{color: "white"}} href="#" underline="none">image Liscensin</Link><br></br>
+       <Link sx={{color: "white", mt: 1}} href="#" underline="none">style guide</Link><br></br>
+       <Link sx={{color: "white", mt: 1}} href="#" underline="none">Privacy Policy</Link>
+        </Box>
+        </Box>
+      </Grid>
+      <Grid item sm={3}>
+      <Box style={fot1}>
+       <Typography sx={{color: "white", mt:3}} variant="h6">Shop Category</Typography>
+       <Box style={fotInfo}>
+       <Link sx={{color: "white"}} href="#" underline="none">image Liscensin</Link><br></br>
+       <Link sx={{color: "white", mt: 1}} href="#" underline="none">style guide</Link><br></br>
+       <Link sx={{color: "white", mt: 1}}  href="#" underline="none">Privacy Policy</Link>
+       </Box>
+       </Box>
+      </Grid>
+      <Grid item sm={3}>
+       <Typography sx={{color: "white", mt:3}} variant="h6">Pertners</Typography>
+       <Box  style={fotInfo}>
+       <Link sx={{color: "white"}} href="#" underline="none">image Liscensin</Link><br></br>
+       <Link sx={{color: "white", mt: 1}} href="#" underline="none">style guide</Link><br></br>
+       <Link sx={{color: "white", mt: 1}} href="#" underline="none">Privacy Policy</Link>
+       </Box>
+      </Grid>
+      {/* <Box sx={{mt: 2}} style={fotPara} >
+       <Typography sx={{color: "white", alignCenter: 'center'}} variant="p">Copyright ©2023 All rights reserved |</Typography>
+      </Box> */}
     </Grid>
     </>
   )

@@ -11,3 +11,105 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.bannerImg{
+  position: relative;
+}
+.bannerImg::before{
+  background-image: url('./images/bg.webp');
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 350px;
+  z-index: -1;
+  top: 0;
+  background-size: cover;
+  filter: brightness(0.5);
+  left: 0;
+  right: 0;
+}
+.ban-text{
+  padding-top: 150px;
+  padding-left: 50px;
+}
+@media screen and (max-width: 450px){
+  .mainNav{
+    width: 100%
+  }.list{
+    display: none
+  }.search{
+    display: none
+  }.acount{
+    margin-left: 240px !important;
+  }.Logo{
+    width: 14% !important;
+  }.banner{
+    width: 45% !important;
+    padding: 34px;
+    margin-top: "62px"
+  }.banHead{
+    font-size: 15px !important;
+  }.banInfo{
+    font-size: 31px !important;
+  }.banPara{
+    font-size: 11px !important;
+  }.banImg{
+    width: 100%;
+    background-size: cover !important;
+    height: 570px !important;
+  }.sec2{
+    font-size: 29px !important;
+  }.subSec2{
+    font-size: 11px !important;
+  }.productNav{
+    margin-left: 0px !important;
+    width: 100% !important;
+  }.pList{
+    font-size: 12px !important;
+  }.prdctItems{
+    width: 75% !important;
+    margin-left: 55px !important;
+    margin-top: 45px !important;
+  }.sec3{
+    margin-top: 50px !important;
+  }.sec3Info{
+    height: 245px !important;
+  }.sec3head{
+    font-size: 29px !important;
+  }.Btn{
+    margin: auto !important;
+  }.services{
+    margin-left: 50px !important;
+    margin-top: 20px !important;
+  }.footer{
+    text-align: center;
+  }.subFooter{
+    margin-left: 32px !important;
+    text-align: center;
+  }.subFooter1{
+    margin-left: 85px !important;
+    text-align: center;
+  }.subFot{
+    text-align: center;
+  }.subBtn{
+    width: 106% !important;
+  }.prdct-ban{
+    width: 100% !important;
+    background-size: cover !important;
+  }.about-img{
+    width: 100%;
+  }.subSec3{
+    font-size: 13px !important;
+  }.prdct-img{
+    width: 90% !important;
+  }.m-prdt{
+    margin-left: 27px !important;
+  }.sub-p-Img{
+    width: 20% !important;
+  }.rewies{
+    margin-left: 10px !important;
+  }.p-d-review{
+    margin-left: 23px !important;
+  }.fields{
+    width: 48ch !important;
+  }
+}

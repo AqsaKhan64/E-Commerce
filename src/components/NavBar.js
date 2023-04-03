@@ -10,6 +10,7 @@ import Tab from '@mui/material/Tab';
 import MenuItem from '@mui/material/MenuItem';
 import img1 from '../images/logo.png.webp'
 import img2 from '../images/bg.webp'
+import cartImg from '../images/card.svg'
 import { Link } from 'react-router-dom';
 
 const Mainnav={
@@ -31,13 +32,17 @@ const Mainnav={
   }
   const nav={
     marginLeft: "150px",
-    padding: "17px 0px",
-    
+    padding: "17px 0px", 
   }
-  const menu={
-    color: "black",
-    fontWeight: "bold",
-    fontSize: "17px"
+  const styles={
+    menu:{
+      color: "black",
+     fontWeight: "bold",
+     fontSize: "17px",
+     "&:hover":{
+      color: "#FD8F5F"
+     }
+    }
   }
   const mainSearch={
      marginLeft: "50px"
@@ -57,18 +62,12 @@ const Mainnav={
   }
   const acount={
     color: "black",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    marginTop: "19px"
   }
   const mainAcount={
     display: "flex",
     marginLeft: "70px",
-    marginTop: "5px"
-  }
-  const cart={
-    color: "black",
-    marginLeft: "20px",
-    fontWeight: "bold",
-    fonrSize: "18px"
   }
   const items={
     top: "-440px",
@@ -77,6 +76,22 @@ const Mainnav={
   const decor={
     textDecoration: "none",
     color: "black"
+  }
+  const mainShop={
+    position: "relative"
+  }
+  const shop={
+    background: "rgb(253, 143, 95)",
+    fontSize: "15px",
+    top: "21px",
+    left: "38px",
+    position: "absolute",
+    padding: "3px 8px",
+    borderRadius: "45%"
+  }
+  const shopImg={
+    marginLeft: "28px",
+    marginTop: "11px"
   }
 function NavBar() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -105,17 +120,20 @@ function NavBar() {
      
         <Grid item container>
      <Grid item sm={12} className='mainNav'>
-     <Toolbar style={Mainnav}>
+     <Toolbar style={Mainnav} className='main-nav'>
             <img className="Logo" src={img1} style={logo}/>
-            
+            <input type="checkbox" id="click"/>
+            <label for="click" className="menu-btn">
+            <i class="fas fa-bars"></i>
+            </label>
               <Typography style={nav} className='list'>
-               <Link style={decor} to='/home'><Tab style={menu} label="Home"/></Link>
-                <Link style={decor} to='/product'> <Tab  style={menu} label="Product"/></Link>
+               <Link style={decor} to='/home'><Tab className='list1' sx={styles.menu} label="Home"/></Link>
+                <Link style={decor} to='/product'> <Tab className='list1' sx={styles.menu}  label="Product"/></Link>
               
                <Link style={decor} to='/about'>
-               <Tab  style={menu} label="About"/>
+               <Tab className='list1' sx={styles.menu}  label="About"/>
                </Link>
-                <Tab style={menu} label="page"
+                <Tab className='list1' sx={styles.menu}  label="page"
                 aria-owns={anchorEl ? "simple-menu" : undefined}
                 aria-haspopup="true"
                 onClick={handleClick}
@@ -128,13 +146,13 @@ function NavBar() {
         onClose={handleClose}
         MenuListProps={{ onMouseLeave: handleClose }}
       >
-        <MenuItem onClick={handleClose}>Login</MenuItem>
-        <MenuItem onClick={handleClose}>Cart</MenuItem>
-        <MenuItem onClick={handleClose}>Categories</MenuItem>
-        <MenuItem onClick={handleClose}>Checkout</MenuItem>
-       <Link style={decor} to='/productdetails'><MenuItem onClick={handleClose}>Product Details</MenuItem></Link>
+        <MenuItem onClick={handleClose} sx={styles.menu}>Login</MenuItem>
+        <MenuItem onClick={handleClose} sx={styles.menu}>Cart</MenuItem>
+        <MenuItem onClick={handleClose} sx={styles.menu}>Categories</MenuItem>
+        <MenuItem onClick={handleClose} sx={styles.menu}>Checkout</MenuItem>
+       <Link style={decor} to='/productdetails'><MenuItem sx={styles.menu}onClick={handleClose}>Product Details</MenuItem></Link>
       </Menu>
-                <Tab  style={menu} label="Blog" 
+                <Tab className='list1'  sx={styles.menu} label="Blog" 
                 aria-owns={menu1 ? "simple-menu1" : undefined}
                 aria-haspopup="true"
                 onClick={MenuClick}
@@ -147,22 +165,23 @@ function NavBar() {
         onClose={MenuClose}
         MenuListProps={{ onMouseLeave: MenuClose }}
       >
-        <MenuItem onClick={MenuClose}>Blog</MenuItem>
-        <MenuItem onClick={MenuClose}>Blog Details</MenuItem>
-        <MenuItem onClick={MenuClose}>Elements</MenuItem>
+        <MenuItem onClick={MenuClose} sx={styles.menu}>Blog</MenuItem>
+        <MenuItem onClick={MenuClose} sx={styles.menu}>Blog Details</MenuItem>
+        <MenuItem onClick={MenuClose} sx={styles.menu}>Elements</MenuItem>
         </Menu>
-                <Tab  style={menu} label="Contact"/>
+                <Tab className='list1' sx={styles.menu}  label="Contact"/>
               </Typography>
               <Box style={mainSearch} className='search'>
-                <input style={search} type="text" placeholder='Search Product'/>
+                <input className='input' style={search} type="text" placeholder='Search Product'/>
                 {/* <SearchIcon style={navIcon}/> */}
                 <i style={navIcon} class="fa-solid fa-magnifying-glass"></i>
               </Box>
               <Box style={mainAcount} className='acount'>
-                <Typography style={acount}>My Account</Typography>
-                <i sx={{mt: 1}} style={cart} class="fa-regular fa-cart-shopping"></i>
-
-                {/* <ShoppingBagOutlinedIcon style={cart}/> */}
+                <Typography className='aount1'  style={acount}>My Account</Typography>
+                <Box style={mainShop}>
+                  <img style={shopImg} src={cartImg}/>
+                  <span style={shop}>0</span>
+                </Box>
               </Box>
             </Toolbar>
      </Grid>

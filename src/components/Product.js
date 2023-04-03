@@ -13,8 +13,7 @@ import Tab from '@mui/material/Tab';
 import Footer from './Footer';
 const products={
   textAlign: "center",
-  marginTop: "250px",
-  // height: "400px"
+  marginTop: "200px",
  }
  const info={
    marginTop: "20px",
@@ -64,13 +63,26 @@ const sec3Btn={
   margin: "auto",
   width: "15%"
 }
+const style={
+  root:{
+    color: "#FD8F5F",
+    padding: "10px 30px",
+    border: "1px solid #FD8F5F",
+    "&:hover":{
+       backgroundColor: "#FD8F5F",
+       cursor: "pointer",
+       color: "white"
+    }
+  }  
+}
 const subBtn={
   color: "#FD8F5F",
   padding: "10px 30px",
   border: "1px solid #FD8F5F",
-  // width: "10%",
-  // margin: "auto"
 }
+const pgIcon={
+  fontSize: "11px",
+ }
 function Product() {
   return (
     <div>
@@ -82,7 +94,7 @@ function Product() {
           <Box className='bannerImg'>
             <Box className='ban-text'>
             <Typography sx={{color: "white", fontWeight: "900"}} variant="h3">PRODUCT</Typography>
-            <Typography sx={{color: "white", mt: 3}} variant="p">Home PRODUCT</Typography>
+            <Typography sx={{color: "white", mt: 3}} variant="p">Home  <i style={pgIcon} class="fa-regular fa-greater-than"></i>  PRODUCT</Typography>
             </Box>
           </Box>
         </Grid>
@@ -101,7 +113,7 @@ function Product() {
         </Typography>
     </Box>
     <Grid item container style={mainP} className='prdctItems' data-aos="fade-up">
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card style={cardInfo}>
         <CardActionArea>
         <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular1.png.webp"/>
@@ -112,7 +124,7 @@ function Product() {
         </CardActionArea>
       </Card>
     </Grid>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card  style={cardInfo}>
         <CardActionArea>
         <CardMedia sx={{ height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular2.png.webp"/>
@@ -123,7 +135,7 @@ function Product() {
         </CardActionArea>
       </Card>
     </Grid>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card  style={cardInfo}>
         <CardActionArea>
         <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular3.png.webp"/>
@@ -136,7 +148,7 @@ function Product() {
     </Grid>
     </Grid>
     <Grid item container style={mainPr} className='prdctItems' data-aos="fade-up">
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card style={cardInfo}>
         <CardActionArea>
         <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular4.png.webp"/>
@@ -147,7 +159,7 @@ function Product() {
         </CardActionArea>
       </Card>
     </Grid>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card  style={cardInfo}>
         <CardActionArea>
         <CardMedia sx={{ height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular5.png.webp"/>
@@ -158,7 +170,7 @@ function Product() {
         </CardActionArea>
       </Card>
     </Grid>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card  style={cardInfo}>
         <CardActionArea>
         <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular6.png.webp"/>
@@ -171,7 +183,7 @@ function Product() {
     </Grid>
     </Grid>
     <Grid item container style={mainPr} className='prdctItems' data-aos="fade-up">
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card style={cardInfo}>
         <CardActionArea>
         <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular7.png.webp"/>
@@ -182,7 +194,7 @@ function Product() {
         </CardActionArea>
       </Card>
     </Grid>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card  style={cardInfo}>
         <CardActionArea>
         <CardMedia sx={{ height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular8.png.webp"/>
@@ -193,7 +205,7 @@ function Product() {
         </CardActionArea>
       </Card>
     </Grid>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card  style={cardInfo}>
         <CardActionArea>
         <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular9.png.webp"/>
@@ -208,7 +220,7 @@ function Product() {
     <Grid item container data-aos="fade-up">
      <Grid  className='Btn' item lg={12}>
       <Box className='subBtn' style={sec3Btn}>
-        <Button style={subBtn}>Discover More</Button>
+        <Button sx={style.root}>Discover More</Button>
       </Box>
      </Grid>
     </Grid>

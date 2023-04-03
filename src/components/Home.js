@@ -102,13 +102,21 @@ const sec3para={
 const sec3Btn={
   marginTop: "30px",
   textAlign: "center",
-  
 }
-const subBtn={
-  color: "#FD8F5F",
-  padding: "10px 30px",
-  border: "1px solid #FD8F5F"
+const style={
+  root:{
+    color: "#FD8F5F",
+    padding: "10px 30px",
+    border: "1px solid #FD8F5F",
+    "&:hover":{
+       backgroundColor: "#FD8F5F",
+       cursor: "pointer",
+       color: "white"
+    }
+  }  
 }
+
+
 const instaImg={
   width: "100%"
 }
@@ -121,42 +129,6 @@ const instaInfo={
 const instaHead={
   fontWeight: "bold",
   marginTop: "10px"
-}
-const service={
-  marginTop: "80px",
-  backgroundColor: "#F2E1D9",
-  padding: "60px",
-}
-const servHead={
-  marginLeft: "50px"
-}
-const footer={
-  backgroundColor: "#1D2547",
-  padding: "100px 80px"
-}
-const fotInfo={
-  marginTop: "30px",
-    lineHeight: "26px"
-}
-const fot={
-  marginLeft: "90px"
-}
-const fot1={
-  marginLeft: "40px"
-}
-const fotPara={ 
-  background: "#1D2547",
-  textAlign: "center",
-  color: "white",
-  paddingBottom: "50px"
-}
-const fotIcon={
-  color: "white",
-    border: "1px solid white",
-    borderRadius: "50%",
-    fontSize: "18px",
-    padding: "7px 11px",
-    margin: "5px"
 }
 function Home() {
   return (
@@ -186,7 +158,7 @@ function Home() {
         </Nav>
     </Box>
     <Grid className='prdctItems' item container style={mainP}>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card style={cardInfo} data-aos="fade-up">
         <CardActionArea>
         <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular1.png.webp"/>
@@ -197,7 +169,7 @@ function Home() {
         </CardActionArea>
       </Card>
     </Grid>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card  style={cardInfo} data-aos="fade-up">
         <CardActionArea>
         <CardMedia sx={{ height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular2.png.webp"/>
@@ -208,7 +180,7 @@ function Home() {
         </CardActionArea>
       </Card>
     </Grid>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card  style={cardInfo} data-aos="fade-up">
         <CardActionArea>
         <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular3.png.webp"/>
@@ -222,10 +194,10 @@ function Home() {
     </Grid>
     {/* sec 3 */}
     <Grid item container style={mainsec3} className='sec3'>
-      <Grid item lg={6}>
+      <Grid item sm={6}>
        <img data-aos="fade-up" style={sec3Img} src={img3}/>
       </Grid>
-      <Grid item lg={6}>
+      <Grid item sm={6}>
         <Box style={sec3Info} className='sec3Info' data-aos="fade-up">
        <Typography className='sec3head' style={sec3head} variant="h2">BEST Furniture MENUFECTURER</Typography>
        <Typography style={sec3para} variant="p">Suspendisse varius enim in eros elementu tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</Typography>
@@ -241,7 +213,7 @@ function Home() {
       <Typography className='subSec2' style={info}>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra <br></br> ornare, eros dolor interdum nulla.</Typography>
     </Box>
     <Grid className='prdctItems' item container style={mainP}>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card style={cardInfo} data-aos="fade-up">
         <CardActionArea>
         <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular4.png.webp"/>
@@ -252,7 +224,7 @@ function Home() {
         </CardActionArea>
       </Card>
     </Grid>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card  style={cardInfo} data-aos="fade-up">
         <CardActionArea>
         <CardMedia sx={{ height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular5.png.webp"/>
@@ -263,7 +235,7 @@ function Home() {
         </CardActionArea>
       </Card>
     </Grid>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card  style={cardInfo} data-aos="fade-up">
         <CardActionArea>
         <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular6.png.webp"/>
@@ -276,24 +248,24 @@ function Home() {
     </Grid>
     </Grid>
     <Grid  item container>
-     <Grid  className='Btn' item lg={12}>
+     <Grid  className='Btn' item sm={12}>
       <Box data-aos="fade-up" style={sec3Btn}>
-        <Button  style={subBtn}>Discover More</Button>
+        <Button sx={style.root}>Discover More</Button>
       </Box>
      </Grid>
     </Grid>
     <Grid item container style={instaSec}>
-      <Grid item lg={4}>
+      <Grid item sm={4}>
        <Box data-aos="fade-up" style={instaInfo}>
-        <img src={img4}/>
-        <Typography className='sec2' style={instaHead} variant="h3">GET INSPIRED <br></br> WITH <br></br> INSTAGARM</Typography>
+        <img className='instaImg' src={img4}/>
+        <Typography className='instaSec' style={instaHead} variant="h3">GET INSPIRED <br></br> WITH <br></br> INSTAGARM</Typography>
         <Typography sx={{mt: 1}}>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</Typography>
        </Box>
       </Grid>
-      <Grid item lg={4}>
+      <Grid item sm={4}>
        <img data-aos="fade-up" style={instaImg} src={img5}/>
       </Grid>
-      <Grid item lg={4}>
+      <Grid item sm={4}>
        <img data-aos="fade-up" style={instaImg} src={img6}/>
       </Grid>
     </Grid>
@@ -302,7 +274,7 @@ function Home() {
       <Typography className='subSec2' style={info}>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra <br></br> ornare, eros dolor interdum nulla.</Typography>
     </Box>
     <Grid item container style={mainP} className='prdctItems'>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card style={cardInfo} data-aos="fade-up">
         <CardActionArea>
         <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular7.png.webp"/>
@@ -313,7 +285,7 @@ function Home() {
         </CardActionArea>
       </Card>
     </Grid>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card  style={cardInfo} data-aos="fade-up">
         <CardActionArea>
         <CardMedia sx={{ height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular8.png.webp"/>
@@ -324,7 +296,7 @@ function Home() {
         </CardActionArea>
       </Card>
     </Grid>
-    <Grid item lg={4}>
+    <Grid item sm={4}>
       <Card  style={cardInfo} data-aos="fade-up">
         <CardActionArea>
         <CardMedia sx={{height: 250}} image="https://preview.colorlib.com/theme/furn/assets/img/gallery/popular9.png.webp"/>
@@ -337,9 +309,9 @@ function Home() {
     </Grid>
     </Grid>
     <Grid item container>
-     <Grid className='Btn' item lg={12}>
+     <Grid className='Btn' item sm={12}>
       <Box style={sec3Btn} data-aos="fade-up">
-        <Button style={subBtn}>Discover More</Button>
+        <Button sx={style.root}>Discover More</Button>
       </Box>
      </Grid>
     </Grid>

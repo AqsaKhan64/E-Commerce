@@ -1,15 +1,9 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  font-family: 'Poppins', sans-serif ;
 }
 .bannerImg{
   position: relative;
@@ -19,29 +13,60 @@ code {
   content: "";
   width: 100%;
   position: absolute;
-  height: 350px;
+  height: 34ch;
   z-index: -1;
-  top: 0;
   background-size: cover;
   filter: brightness(0.5);
-  left: 0;
-  right: 0;
 }
 .ban-text{
-  padding-top: 150px;
+  padding-top: 130px;
   padding-left: 50px;
 }
-@media screen and (max-width: 450px){
+.fa-cart-shopping{
+  font-size: 30px !important;
+}
+@media screen and (width: 450px){
   .mainNav{
     width: 100%
-  }.list{
-    display: none
-  }.search{
+  } .main-nav .list {
+    width: 100%;
+    display: block !important;
+    background-color: white;
+    opacity: 0.7;
+    text-align: center;
+    left: 0;
+    top: 48px;
+    z-index: 1;
+    color: white;
+    position: fixed;
+    left: -135%;
+    transition: all 0.5s ease; }
+    .main-nav .list {
+      font-size: 20px;
+      margin-left: 22px !important; }
+      .main-nav #click:checked ~ .list {
+        left: -5%; }
+        .main-nav .menu-btn {
+          display: block !important;
+          font-size: 20px;
+          position: absolute;
+          border-radius: 5px;
+          padding: 0px 8px;
+          border: 1px solid white;
+          right: 20px;
+          color: white;
+          top: 8px; }
+        .main-nav   .menu-btn {
+          font-size: 22px;
+          cursor: pointer ;
+          display: none ; }
+    .search{
     display: none
   }.acount{
-    margin-left: 240px !important;
+    display: none !important;
   }.Logo{
     width: 14% !important;
+    z-index: 2 !important;
   }.banner{
     width: 45% !important;
     padding: 34px;
@@ -110,6 +135,86 @@ code {
   }.p-d-review{
     margin-left: 23px !important;
   }.fields{
-    width: 48ch !important;
+    width: 43ch !important;
   }
 }
+@media screen and (width: 900px){
+  .mainNav{
+    width: 100%
+  }.list{
+    display: flex;
+    margin-left: 25px !important;
+    padding: 0 !important;
+  }.list1{
+    font-size: 11px !important;
+    font-weight: bold !important;
+  }.css-cjctlb-MuiButtonBase-root-MuiTab-root{
+    min-width: 0 !important;
+  }.search{
+    margin-left: 0px !important;
+  }.input{
+    font-size: 9px !important;
+    font-weight: bold !important;
+  }.subBtn{
+    width: 106% !important;
+  }.Btn{
+    margin: auto !important;
+  }.aount1{
+    margin-top: 10 !important;
+    font-size: 10px !important;
+  }
+  .acount{
+    margin-left: 23px !important;
+    
+  }.banImg{
+    width: 100%;
+    background-size: cover !important;
+    height: 570px !important;
+  }.banInfo{
+    font-size: 25px !important;
+  }.banPara{
+    font-size: 14px !important;
+  }.banner{
+    width: 31% !important;
+    padding: 34px !important;
+  }.prdctItems{
+     width: 100% !important;
+     margin-left: 0 !important;
+  }.sec3head{
+    font-size: 32px !important;
+  }.instaSec{
+    font-size: 18px !important;
+  }.instaImg{
+    width: 23%;
+  }.md-serv{
+    padding: 60px 0px !important;
+  }.services{
+    padding: 8px !important;
+  }.serv-1{
+    margin-left: 23px !important;
+  }
+  .md-Footer{
+    padding: 100px 30px !important;
+  }
+  .about-img{
+    width: 100%;
+  }.fields{
+    width: 45ch !important;
+  }
+}
+@media screen and (width: 1200px){
+  .list{
+    display: flex;
+    margin-left: 110px !important;
+  }.input{
+    font-size: 16px !important;
+  }.instaSec{
+    font-size: 42px !important;
+}.search{
+  margin-left: 25px !important;
+}.acount{
+  margin-left: 40px !important;
+}
+}
+
+

@@ -48,9 +48,9 @@ const service={
 function Footer() {
   return (
     <div>
-      <Grid item container style={service}>
+      <Grid item container style={service} className='md-serv'>
       <Grid item lg={3} >
-        <Box style={servHead}>
+        <Box style={servHead} className='serv-1'>
         <img src={img7}/>
         <Typography variant="h6">Fast & Free Delivery</Typography>
         <Typography variant="p">Free delivery on all orders</Typography>
@@ -78,7 +78,7 @@ function Footer() {
       </Box>
       </Grid>
     </Grid>
-    <Grid item container style={foter}>
+    <Grid item container style={foter} className='md-Footer'>
       <Grid className='footer' item sm={3}>
        <img src={img11}/>
        <Typography sx={{color: "white", mt:2}}>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</Typography>

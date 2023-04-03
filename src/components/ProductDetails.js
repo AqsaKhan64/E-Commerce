@@ -28,7 +28,6 @@ import NavBar from './NavBar';
   }
   const products={
     display: "flex",
-    // padding: "5px"
   }
   const pimg={
     width: "15%",
@@ -75,6 +74,13 @@ import NavBar from './NavBar';
     color: "white",
     background: "#FD8F5F",
   }
+  const cmntBtn2={
+    border: "1px solid #ddd",
+    borderRadius: "50px",
+    height: "30px",
+    color: "#FD8F5F",
+  }
+
   const reviews={
     display: "flex",
     marginLeft: "75px",
@@ -98,6 +104,9 @@ import NavBar from './NavBar';
   const form={
     width: "58ch"
   }
+  const pgIcon={
+    fontSize: "11px",
+   }
 function ProductDetails() {
     const [count,setCount]=useState(0)
   return (
@@ -110,13 +119,9 @@ function ProductDetails() {
         <Box className='bannerImg'>
             <Box className='ban-text'>
             <Typography sx={{color: "white", fontWeight: "900"}} variant="h3">PRODUCT DETAILS</Typography>
-            <Typography sx={{color: "white", mt: 3}} variant="p">Home PRODUCT DETAILS</Typography>
+            <Typography sx={{color: "white", mt: 3}} variant="p">Home  <i style={pgIcon} class="fa-regular fa-greater-than"></i> PRODUCT DETAILS</Typography>
             </Box>
           </Box>
-          {/* <Box style={aboutBan}>
-            <Typography variant="h2">PRODUCT DEATILS</Typography>
-            <Typography variant="p">Home Product</Typography>
-          </Box> */}
         </Grid>
     </Grid>
     <Grid item container style={mainPrdct}>
@@ -154,9 +159,9 @@ function ProductDetails() {
     <Grid item container>
         <Grid item sm={12}>
          <Box style={cmnts} className='rewies' data-aos="fade-up">
-            <Button style={cmntBtn}>Description</Button>
-            <Button style={cmntBtn}>Specification</Button>
-            <Button style={cmntBtn}>Comments</Button>
+            <Button style={cmntBtn2}>Description</Button>
+            <Button style={cmntBtn2}>Specification</Button>
+            <Button style={cmntBtn2}>Comments</Button>
             <Button style={cmntBtn}>Reviews</Button>
          </Box>
         </Grid>

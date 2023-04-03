@@ -10,20 +10,13 @@ import img6 from '../images/insta2.webp'
 import img7 from '../images/insta.webp'
 import NavBar from './NavBar';
 import Footer from './Footer';
-
-
-  const aboutBan={
-    backgroundImage: `url(${img2})`,
-    backgroundSize: "cover",
-        height: "250px",
-        color: "white",
-        paddingTop: "150px",
-        paddingLeft: "50px"
-
-  }
   const AboutCntnt={
     textAlign: "center",
     marginTop: "200px"
+  }
+  const AboutCntnt2={
+    textAlign: "center",
+    marginTop: "100px"
   }
   const about={
     width: "62%",
@@ -49,8 +42,12 @@ import Footer from './Footer';
     fontWeight: "bold",
     marginTop: "10px"
   }
+  const pgIcon={
+   fontSize: "11px",
+  }
 function About() {
-  // const classes = useStyles();
+ 
+  
   return (
     <>
     <Grid>
@@ -61,19 +58,15 @@ function About() {
         <Box className='bannerImg'>
             <Box className='ban-text'>
             <Typography sx={{color: "white", fontWeight: "900"}} variant="h3">ABOUT</Typography>
-            <Typography sx={{color: "white", mt: 3}} variant="p">Home ABOUT</Typography>
+            <Typography sx={{color: "white", mt: 3}} variant="p">Home  <i style={pgIcon} class="fa-regular fa-greater-than"></i>  ABOUT</Typography>
             </Box>
           </Box>
-          {/* <Box style={aboutBan}>
-            <Typography variant="h1">ABOUT</Typography>
-            <Typography variant="p">Home ABOUT</Typography>
-          </Box> */}
         </Grid>
     </Grid>
     <Grid item container data-aos="fade-up">
         <Grid item sm={12}>
             <Box style={AboutCntnt}>
-                <Typography className='sec2' variant="h2">OUR STORY</Typography>
+                <Typography sx={{fontWeight: "bold"}} className='sec2' variant="h2">OUR STORY</Typography>
                 <Typography className='subSec3' style={about}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </Typography>
@@ -89,8 +82,8 @@ function About() {
     </Grid>
     <Grid item container>
         <Grid item sm={12}>
-            <Box style={AboutCntnt} data-aos="fade-up">
-                <Typography className='sec2' variant="h2">JOURNEY START FROM</Typography>
+            <Box style={AboutCntnt2} data-aos="fade-up">
+                <Typography sx={{fontWeight: "bold"}} className='sec2' variant="h2">JOURNEY START FROM</Typography>
                 <Typography className='subSec3' style={about}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </Typography>
@@ -106,8 +99,8 @@ function About() {
     </Grid>
     <Grid item container>
         <Grid item sm={12}>
-            <Box style={AboutCntnt} data-aos="fade-up">
-                <Typography className='sec2'  variant="h2">2023</Typography>
+            <Box style={AboutCntnt2} data-aos="fade-up">
+                <Typography sx={{fontWeight: "bold"}} className='sec2'  variant="h2">2023</Typography>
                 <Typography className='subSec3' style={about}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </Typography>
@@ -116,17 +109,17 @@ function About() {
     </Grid>
     
     <Grid item container style={instaSec}>
-      <Grid item lg={4}>
+      <Grid item sm={4}>
        <Box style={instaInfo} data-aos="fade-up">
         <img src={img7}/>
-        <Typography className='sec2' style={instaHead} variant="h3">GET INSPIRED <br></br> WITH <br></br> INSTAGARM</Typography>
+        <Typography  className='instaSec' style={instaHead} variant="h3">GET INSPIRED <br></br> WITH <br></br> INSTAGARM</Typography>
         <Typography sx={{mt: 1}}>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</Typography>
        </Box>
       </Grid>
-      <Grid item lg={4}>
+      <Grid item sm={4}>
        <img style={instaImg} src={img5}/>
       </Grid>
-      <Grid item lg={4}>
+      <Grid item sm={4}>
        <img style={instaImg} src={img6}/>
       </Grid>
     </Grid>

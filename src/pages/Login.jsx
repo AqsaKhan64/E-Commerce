@@ -1,22 +1,22 @@
-import { Typography, TextField,Button,Box} from '@mui/material'
+import { Typography, TextField,Button,Box,Grid} from '@mui/material'
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import React from 'react';
-import img1 from '../imges/img1.jpeg';
+import img1 from '../images/img1.jpeg'
 
 const bg = {
   backgroundImage:`url(${img1})`,
   backgroundSize:'cover',
   backgroundPosition:'fixed',
   backgroundRepeat:'no-repeat',
-  height:'105vh',
+  height:'100vh',
   width:'100%',
 }
 const card = {
   background:'white',
   position:'absolute',
   width:'43%',
-  height:'95vh',
+  height:'90vh',
   top:'5%',
   left:'30%', 
 }
@@ -86,24 +86,38 @@ const btn = {
 function Login () {
   return (
     <>
-     <Box style={bg}></Box>
-     <Box style={card}>
-     <Typography style={loginHeading} variant='h4'>Login</Typography>
-     <Typography style={logintext}>Enter Login details to get access</Typography>
-  
-     <form>
-      <Typography style={formContent}>Username Or Email Address</Typography>
-       <TextField style={field} id="outlined-basic" variant="outlined" placeholder='Username Or Email Address'/>
+     <Box style={bg} className='banner'>
+     <Box style={card} className='bannerForm'>
+     <Grid item sm={12}>
+     <Typography style={loginHeading} variant='h4' className='login'>Login</Typography>
+     <Typography style={logintext} className='bannerpara'>Enter Login details to get access</Typography>
+     </Grid>
+    
+     <Grid container item>
+      <Grid item sm={12}>
+      <form>
+      <Typography style={formContent} className='name'>Username Or Email Address</Typography>
+       <TextField style={field} className='feildInput' id="outlined-basic" variant="outlined" placeholder='Username Or Email Address'/>
        <Typography style={formContent}>Password</Typography>
-       <TextField style={field} id="outlined-basic" variant="outlined" placeholder='Enter Password'/>
+       <TextField style={field} className='feildInput' id="outlined-basic" variant="outlined" placeholder='Enter Password'/>
      </form>
-     <Box style={box}>
+      </Grid>
+      <Box style={box}>
      <FormControlLabel control={<Checkbox defaultChecked />} label="Keep Me Logged In"  />
-     <Typography style={link}>Forget Password?</Typography>
+      <Grid item sm={12}>
+     <Typography style={link} className='paswrd'>Forget Password?</Typography>
+     </Grid>
      </Box>
+    
      <Box style={inputFooter}>
-      <Typography style={loginFooter}>Don’t have an account?<a href='#' style={up}>Sign Up</a> here</Typography>
-      <Button style={btn}>Login</Button>
+      <Grid item sm={12}>
+      <Typography style={loginFooter} className='btnContent'>Don’t have an account?<a href='#' style={up}>Sign Up</a> here</Typography>
+      </Grid>
+      <Grid item sm={12}>
+      <Button style={btn} className='btn'>Login</Button>
+      </Grid>
+     </Box>
+     </Grid>
      </Box>
      </Box>
 

@@ -1,3 +1,6 @@
+ *{
+    font-family: 'Poppins', sans-serif;
+  }
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,82 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+
+
+
+.cardbg{
+  position: relative;
+}
+
+.cardbg::before{
+  position: absolute;
+  content: "";
+  background-image: url(../src/images/img2.jpeg);
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 277px;
+  filter: brightness(0.8);
+  z-index: -1;
+}
+.form-control{
+  border: 1px solid #eee;
+  color:#797979;
+  font-size: 18px;
+}
+.textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 0px;
+    padding: 20px 20px;
+    margin-top: 15px;
+    border: 1px solid #eee;
+    color:#797979;
+    font-size: 18px;
+}
+
+@media screen and (width:450px) {
+.banner{
+    width: 1225px !important;
+    height: 189vh !important;
+}
+.bannerForm{
+  width: 100% !important;
+  margin-left: 220px;
+  height: 203vh !important;
+  margin-top: -63px;
+  padding-top: 10px;
+}
+.login{
+  padding-left: 0px;
+}
+.bannerpara{
+  padding-left: -8px;
+}
+.feildInput{
+    width: 100%!important;
+    left: -4px;
+}
+.paswrd{
+  padding-left: 10px;
+}
+.btnContent{
+   width: 100% ; 
+}
+.btn{
+  width: 45%;
+}
+.cardbg::before{
+  width: 1225px !important;
+}
+.nav{
+  width: 100% !important;
+}
+
+
 }

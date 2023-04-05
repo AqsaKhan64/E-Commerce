@@ -11,6 +11,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Tab from '@mui/material/Tab';
 import Footer from './Footer';
+import Data from './data.json'
 const products={
   textAlign: "center",
   marginTop: "200px",
@@ -112,7 +113,132 @@ function Product() {
           <Tab className='pList' label="Decore"/>
         </Typography>
     </Box>
-    <Grid item container style={mainP} className='prdctItems' data-aos="fade-up">
+    {
+      Data.map(record=>{
+        return(
+          <>
+          <Grid item container style={mainP} className='prdctItems' data-aos="fade-up">
+          <Grid item sm={4}>
+            <Card style={cardInfo}>
+              <CardActionArea>
+              <CardMedia sx={{height: 250}} image={require('../images/sofa1.webp')}/>
+              <CardContent>
+                <Typography sx={{fontWeight: "bold"}} variant="h6">{record.title}</Typography>
+                <Typography sx={{mt: 1}} variant="h6">{record.description}</Typography>
+                <Typography sx={{mt: 1, color: "red"}} variant="h6">{record.price}</Typography>
+              </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item sm={4}>
+            <Card  style={cardInfo}>
+              <CardActionArea>
+              <CardMedia sx={{ height: 250}} image={require('../images/sofa2.webp')}/>
+              <CardContent>
+                <Typography sx={{fontWeight: "bold"}} variant="h6">{record.title}</Typography>
+                <Typography sx={{mt: 1}} variant="h6">{record.description}</Typography>
+                <Typography sx={{mt: 1, color: "red"}} variant="h6">{record.price}</Typography>
+              </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          <Grid item sm={4}>
+            <Card  style={cardInfo}>
+              <CardActionArea>
+              <CardMedia sx={{height: 250}} image={require('../images/sofa3.webp')}/>
+              <CardContent>
+                <Typography sx={{fontWeight: "bold"}} variant="h6">{record.title}</Typography>
+                <Typography sx={{mt: 1}} variant="h6">{record.description}</Typography>
+                <Typography sx={{mt: 1, color: "red"}} variant="h6">{record.price}</Typography>
+              </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
+          </Grid>
+          <Grid item container style={mainPr} className='prdctItems' data-aos="fade-up">
+    <Grid item sm={4}>
+      <Card style={cardInfo}>
+        <CardActionArea>
+        <CardMedia sx={{height: 250}} image={require('../images/chair1.webp')}/>
+        <CardContent>
+          <Typography sx={{fontWeight: "bold"}} variant="h6">{record.title2.title}</Typography>
+          <Typography sx={{mt: 1}} variant="h6">{record.title2.description}</Typography>
+          <Typography sx={{mt: 1, color: "red"}} variant="h6">{record.price}</Typography>
+        </CardContent>
+        </CardActionArea>
+      </Card>
+    </Grid>
+    <Grid item sm={4}>
+      <Card  style={cardInfo}>
+        <CardActionArea>
+        <CardMedia sx={{ height: 250}} image={require('../images/chair3.webp')}/>
+        <CardContent>
+          <Typography sx={{fontWeight: "bold"}} variant="h6">{record.title2.title}</Typography>
+          <Typography sx={{mt: 1}} variant="h6">{record.title2.description}</Typography>
+          <Typography sx={{mt: 1, color: "red"}} variant="h6">{record.price}</Typography>
+        </CardContent>
+        </CardActionArea>
+      </Card>
+    </Grid>
+    <Grid item sm={4}>
+      <Card  style={cardInfo}>
+        <CardActionArea>
+        <CardMedia sx={{height: 250}} image={require('../images/product1.webp')}/>
+        <CardContent>
+          <Typography sx={{fontWeight: "bold"}} variant="h6">{record.title2.title}</Typography>
+          <Typography sx={{mt: 1}} variant="h6">{record.title2.description}</Typography>
+          <Typography sx={{mt: 1, color: "red"}} variant="h6">{record.price}</Typography>
+        </CardContent>
+        </CardActionArea>
+      </Card>
+    </Grid>
+    </Grid>
+          <Grid item container style={mainPr} className='prdctItems' data-aos="fade-up">
+    <Grid item sm={4}>
+      <Card style={cardInfo}>
+        <CardActionArea>
+        <CardMedia sx={{height: 250}} image={require('../images/product3.webp')}/>
+        <CardContent>
+          <Typography sx={{fontWeight: "bold"}} variant="h6">{record.title}</Typography>
+          <Typography sx={{mt: 1}} variant="h6">{record.description}</Typography>
+          <Typography sx={{mt: 1, color: "red"}} variant="h6">{record.price}</Typography>
+        </CardContent>
+        </CardActionArea>
+      </Card>
+    </Grid>
+    <Grid item sm={4}>
+      <Card  style={cardInfo}>
+        <CardActionArea>
+        <CardMedia sx={{ height: 250}} image={require('../images/product2.webp')}/>
+        <CardContent>
+          <Typography sx={{fontWeight: "bold"}} variant="h6">{record.title}</Typography>
+          <Typography sx={{mt: 1}} variant="h6">{record.description}</Typography>
+          <Typography sx={{mt: 1, color: "red"}} variant="h6">{record.price}</Typography>
+        </CardContent>
+        </CardActionArea>
+      </Card>
+    </Grid>
+    <Grid item sm={4}>
+      <Card  style={cardInfo}>
+        <CardActionArea>
+        <CardMedia sx={{height: 250}} image={require('../images/product4.webp')}/>
+        <CardContent>
+          <Typography sx={{fontWeight: "bold"}} variant="h6">{record.title}</Typography>
+          <Typography sx={{mt: 1}} variant="h6">{record.description}</Typography>
+          <Typography sx={{mt: 1, color: "red"}} variant="h6">{record.price}</Typography>
+        </CardContent>
+        </CardActionArea>
+      </Card>
+    </Grid>
+    </Grid>
+    
+          
+          </>
+        )
+      })
+     }
+     
+    {/* <Grid item container style={mainP} className='prdctItems' data-aos="fade-up">
     <Grid item sm={4}>
       <Card style={cardInfo}>
         <CardActionArea>
@@ -146,8 +272,8 @@ function Product() {
         </CardActionArea>
       </Card>
     </Grid>
-    </Grid>
-    <Grid item container style={mainPr} className='prdctItems' data-aos="fade-up">
+    </Grid> */}
+    {/* <Grid item container style={mainPr} className='prdctItems' data-aos="fade-up">
     <Grid item sm={4}>
       <Card style={cardInfo}>
         <CardActionArea>
@@ -216,7 +342,7 @@ function Product() {
         </CardActionArea>
       </Card>
     </Grid>
-    </Grid>
+    </Grid> */}
     <Grid item container data-aos="fade-up">
      <Grid  className='Btn' item lg={12}>
       <Box className='subBtn' style={sec3Btn}>

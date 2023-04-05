@@ -80,7 +80,6 @@ import NavBar from './NavBar';
     height: "30px",
     color: "#FD8F5F",
   }
-
   const reviews={
     display: "flex",
     marginLeft: "75px",

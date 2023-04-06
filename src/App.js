@@ -8,8 +8,6 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  
-  
   return (
     <>
     
@@ -19,6 +17,7 @@ function App() {
       <Route path="product" element={<Product/>} />
       <Route path="about" element={<About />} />
       <Route path="productdetails" element={<ProductDetails />} />
+
       </Routes>
     </BrowserRouter>
     </>

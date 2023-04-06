@@ -1,44 +1,44 @@
 [
     {
         "id": 1,
-        "title": "Sofa",
+        "title": "Chair",
         "description": "The Darcy bedside locker has been designed.",
-        "image": "./images/sofa1.webp",
+        "image": "./images/chair1.webp",
         "price": "$365"
     },
     {
         "id": 2,
-        "title": "Sofa",
+        "title": "Chair",
         "description": "The Darcy bedside locker has been designed.",
-        "image": "./images/sofa2.webp",
+        "image": "./images/chair2.webp",
         "price": "$365"
     },
     {
         "id": 3,
-        "title": "Sofa",
+        "title": "Chair",
         "description": "The Darcy bedside locker has been designed.",
-        "image": "./images/sofa3.webp",
+        "image": "./images/chair3.webp",
         "price": "$365"
     },
     {
         "id": 4,
-        "title": "Sofa",
+        "title": "Chair",
         "description": "The Darcy bedside locker has been designed.",
-        "image": "./images/product2.webp",
+        "image": "./images/chair4.jpg",
         "price": "$365"
     },
     {
         "id": 5,
-        "title": "Sofa",
+        "title": "Chair",
         "description": "The Darcy bedside locker has been designed.",
-        "image": "./images/product3.webp",
+        "image": "./images/chair5.jpg",
         "price": "$365"
     },
     {
         "id": 6,
-        "title": "Sofa",
+        "title": "Chair",
         "description": "The Darcy bedside locker has been designed.",
-        "image": "./images/product4.webp",
+        "image": "./images/chair6.jpg",
         "price": "$365"
     }
 

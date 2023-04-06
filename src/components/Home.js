@@ -154,7 +154,6 @@ function Home() {
           <Tab className='pList' label="Table"/>
           <Tab className='pList' label="Chair"/>
           <Tab className='pList' label="Bed"/>
-          <Tab className='pList' label="Decore"/>
         </Nav>
     </Box>
     <Grid className='prdctItems' item container style={mainP}>

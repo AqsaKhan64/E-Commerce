@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  
 }
 *{
   font-family: 'Poppins', sans-serif ;
@@ -25,6 +24,24 @@ body {
 .fa-cart-shopping{
   font-size: 30px !important;
 }
+.items{
+
+  display: none;
+}
+.show-items{
+  display: block;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.p-Link{
+  text-decoration: none;
+  color: black;
+}
+
+
 @media screen and (width: 450px){
   .mainNav{
     width: 100%

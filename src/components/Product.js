@@ -95,10 +95,10 @@ function Product() {
     </Box>
     <Box>
         <Typography style={prdcts} className='productNav' data-aos="fade-up">
-          <Tab className='pList' onClick={()=>updateToggle(1)}  label="sofa"/>
-          <Tab className='pList' onClick={()=>updateToggle(2)} label="Table"/>
-          <Tab className='pList' onClick={()=>updateToggle(3)} label="Chair"/>
-          <Tab className='pList' onClick={()=>updateToggle(4)} label="Bed"/>
+          <Tab className={toggle === 1 ? "tabs active-tabs" : "tabs"} onClick={()=>updateToggle(1)}  label="sofa"/>
+          <Tab className={toggle === 2 ? "tabs active-tabs" : "tabs"} onClick={()=>updateToggle(2)} label="Table"/>
+          <Tab className={toggle === 3 ? "tabs active-tabs" : "tabs"} onClick={()=>updateToggle(3)} label="Chair"/>
+          <Tab className={toggle === 4 ? "tabs active-tabs" : "tabs"} onClick={()=>updateToggle(4)} label="Bed"/>
         </Typography>
     </Box>
     <Box className={toggle === 1 ? "show-items" : "items"}>

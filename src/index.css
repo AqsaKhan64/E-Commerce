@@ -40,6 +40,13 @@ body {
   text-decoration: none;
   color: black;
 }
+.tabs{
+  font-weight: bold !important;
+}
+.active-tabs{
+  border-bottom: 3px solid #FD8F5F !important;
+  color: #FD8F5F !important;
+}
 
 
 @media screen and (width: 450px){

@@ -1,42 +1,42 @@
 [
     {
         "id": 1,
-        "title": "Bed",
+        "title": "Sleigh Bed",
         "description": "The Darcy bedside locker has been designed.",
         "image": "./images/bed1.jpg",
         "price": "$365"
     },
     {
         "id": 2,
-        "title": "Bed",
+        "title": "Upholstered Bed",
         "description": "The Darcy bedside locker has been designed.",
         "image": "./images/bed2.jpg",
         "price": "$365"
     },
     {
         "id": 3,
-        "title": "Bed",
+        "title": "Wood Bed",
         "description": "The Darcy bedside locker has been designed.",
         "image": "./images/bed3.jpg",
         "price": "$365"
     },
     {
         "id": 4,
-        "title": "Bed",
+        "title": "Panel Bed",
         "description": "The Darcy bedside locker has been designed.",
         "image": "./images/bed4.jpg",
         "price": "$365"
     },
     {
         "id": 5,
-        "title": "Bed",
+        "title": "Divan Bed",
         "description": "The Darcy bedside locker has been designed.",
         "image": "./images/bed5.jpg",
         "price": "$365"
     },
     {
         "id": 6,
-        "title": "Bed",
+        "title": "Panel Bed",
         "description": "The Darcy bedside locker has been designed.",
         "image": "./images/bed6.jpg",
         "price": "$365"

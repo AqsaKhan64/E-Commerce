@@ -1,10 +1,10 @@
 import { Container,Paper,Typography,Box,Pagination,Stack,Grid,} from "@mui/material";
-import PersonIcon from "@mui/icons-material/Person";
-import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded";
+// import PersonIcon from "@mui/icons-material/Person";
+// import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded";
 import "../index.css";
 import React from "react";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Link } from "@mui/icons-material";
+// import { Link } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 const blog1 = require("../images/single_blog_1.png.webp");
 const blog2 = require("../images/single_blog_2.png.webp");
@@ -33,12 +33,12 @@ const BlogPosts = () => {
               className="list-item"
               sx={{ fontSize: 14, display: "inline-block" }}
             >
-              <PersonIcon /> Travel,lifestyle
+              {/* <PersonIcon /> Travel,lifestyle */}
             </Typography>|<Typography
               className="list-item"
               sx={{ fontSize: 14, display: "inline-block" }}
             >
-              <QuestionAnswerRoundedIcon /> 03 Comments
+              {/* <QuestionAnswerRoundedIcon /> 03 Comments */}
             </Typography>
           </Box>
         </Paper>
@@ -59,14 +59,14 @@ const BlogPosts = () => {
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                <PersonIcon /> Travel,lifestyle
+                {/* <PersonIcon /> Travel,lifestyle */}
               </Typography>{" "}
               |{" "}
               <Typography
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                <QuestionAnswerRoundedIcon /> 03 Comments
+                {/* <QuestionAnswerRoundedIcon /> 03 Comments */}
               </Typography>
             </Box>
           </Box>
@@ -87,14 +87,14 @@ const BlogPosts = () => {
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                <PersonIcon /> Travel,lifestyle
+                {/* <PersonIcon /> Travel,lifestyle */}
               </Typography>{" "}
               |{" "}
               <Typography
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                <QuestionAnswerRoundedIcon /> 03 Comments
+                {/* <QuestionAnswerRoundedIcon /> 03 Comments */}
               </Typography>
             </Box>
           </Box>
@@ -115,14 +115,14 @@ const BlogPosts = () => {
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                <PersonIcon /> Travel,lifestyle
+                {/* <PersonIcon /> Travel,lifestyle */}
               </Typography>{" "}
               |{" "}
               <Typography
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                <QuestionAnswerRoundedIcon /> 03 Comments
+                {/* <QuestionAnswerRoundedIcon /> 03 Comments */}
               </Typography>
             </Box>
           </Box>
@@ -143,14 +143,14 @@ const BlogPosts = () => {
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                <PersonIcon /> Travel,lifestyle
+                {/* <PersonIcon /> Travel,lifestyle */}
               </Typography>{" "}
               |{" "}
               <Typography
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                <QuestionAnswerRoundedIcon /> 03 Comments
+                {/* <QuestionAnswerRoundedIcon /> 03 Comments */}
               </Typography>
             </Box>
           </Box>

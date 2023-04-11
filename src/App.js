@@ -6,14 +6,14 @@ import Product from './components/Product';
 import './index.css';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import userData from './components/userData.json'
 
 function App() {
   
-  
   return (
     <>
-    
-  <BrowserRouter>
+   
+   <BrowserRouter>
       <Routes>
       <Route path='home' element={<Home/>} />
       <Route path="product" element={<Product/>} />
@@ -21,6 +21,7 @@ function App() {
       <Route path="productdetails" element={<ProductDetails />} />
       </Routes>
     </BrowserRouter>
+    
     </>
   );
 }

@@ -3,92 +3,236 @@
   }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-
-
-
-
-.cardbg{
+/* *{
+  font-family: 'Poppins', sans-serif ;
+} */
+.bannerImg{
   position: relative;
 }
-
-.cardbg::before{
-  position: absolute;
+.bannerImg::before{
+  background-image: url('./images/bg.webp');
   content: "";
-  background-image: url(../src/images/img2.jpeg);
-  background-position: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
-  height: 277px;
-  filter: brightness(0.8);
+  position: absolute;
+  height: 34ch;
   z-index: -1;
+  background-size: cover;
+  filter: brightness(0.5);
 }
-.form-control{
-  border: 1px solid #eee;
-  color:#797979;
-  font-size: 18px;
+.ban-text{
+  padding-top: 130px;
+  padding-left: 50px;
 }
-.textarea{
+.fa-cart-shopping{
+  font-size: 30px !important;
+}
+@media screen and (width: 450px){
+  .mainNav{
+    width: 100%
+  } .main-nav .list {
     width: 100%;
-    height: 150px;
-    border-radius: 0px;
-    padding: 20px 20px;
-    margin-top: 15px;
-    border: 1px solid #eee;
-    color:#797979;
-    font-size: 18px;
+    display: block !important;
+    background-color: white;
+    opacity: 0.7;
+    text-align: center;
+    left: 0;
+    top: 48px;
+    z-index: 1;
+    color: white;
+    position: fixed;
+    left: -135%;
+    transition: all 0.5s ease; }
+    .main-nav .list {
+      font-size: 20px;
+      margin-left: 22px !important; }
+      .main-nav #click:checked ~ .list {
+        left: -5%; }
+        .main-nav .menu-btn {
+          display: block !important;
+          font-size: 20px;
+          position: absolute;
+          border-radius: 5px;
+          padding: 0px 8px;
+          border: 1px solid white;
+          right: 20px;
+          color: white;
+          top: 8px; }
+        .main-nav   .menu-btn {
+          font-size: 22px;
+          cursor: pointer ;
+          display: none ; }
+    .search{
+    display: none
+  }.acount{
+    display: none !important;
+  }.Logo{
+    width: 14% !important;
+    z-index: 2 !important;
+  }.banner{
+    width: 45% !important;
+    padding: 34px;
+    margin-top: "62px"
+  }.banHead{
+    font-size: 15px !important;
+  }.banInfo{
+    font-size: 31px !important;
+  }.banPara{
+    font-size: 11px !important;
+  }.banImg{
+    width: 100%;
+    background-size: cover !important;
+    height: 570px !important;
+  }.sec2{
+    font-size: 29px !important;
+  }.subSec2{
+    font-size: 11px !important;
+  }.productNav{
+    margin-left: 0px !important;
+    width: 100% !important;
+  }.pList{
+    font-size: 12px !important;
+  }.prdctItems{
+    width: 75% !important;
+    margin-left: 55px !important;
+    margin-top: 45px !important;
+  }.sec3{
+    margin-top: 50px !important;
+  }.sec3Info{
+    height: 245px !important;
+  }.sec3head{
+    font-size: 29px !important;
+  }.Btn{
+    margin: auto !important;
+  }.services{
+    margin-left: 50px !important;
+    margin-top: 20px !important;
+  }.footer{
+    text-align: center;
+  }.subFooter{
+    margin-left: 32px !important;
+    text-align: center;
+  }.subFooter1{
+    margin-left: 85px !important;
+    text-align: center;
+  }.subFot{
+    text-align: center;
+  }.subBtn{
+    width: 106% !important;
+  }.prdct-ban{
+    width: 100% !important;
+    background-size: cover !important;
+  }.about-img{
+    width: 100%;
+  }.subSec3{
+    font-size: 13px !important;
+  }.prdct-img{
+    width: 90% !important;
+  }.m-prdt{
+    margin-left: 27px !important;
+  }.sub-p-Img{
+    width: 20% !important;
+  }.rewies{
+    margin-left: 10px !important;
+  }.p-d-review{
+    margin-left: 23px !important;
+  }.fields{
+    width: 43ch !important;
+  }
+}
+@media screen and (width: 900px){
+  .mainNav{
+    width: 100%
+  }.list{
+    display: flex;
+    margin-left: 25px !important;
+    padding: 0 !important;
+  }.list1{
+    font-size: 11px !important;
+    font-weight: bold !important;
+  }.css-cjctlb-MuiButtonBase-root-MuiTab-root{
+    min-width: 0 !important;
+  }.search{
+    margin-left: 0px !important;
+  }.input{
+    font-size: 9px !important;
+    font-weight: bold !important;
+  }.subBtn{
+    width: 106% !important;
+  }.Btn{
+    margin: auto !important;
+  }.aount1{
+    margin-top: 10 !important;
+    font-size: 10px !important;
+  }
+  .acount{
+    margin-left: 23px !important;
+    
+  }.banImg{
+    width: 100%;
+    background-size: cover !important;
+    height: 570px !important;
+  }.banInfo{
+    font-size: 25px !important;
+  }.banPara{
+    font-size: 14px !important;
+  }.banner{
+    width: 31% !important;
+    padding: 34px !important;
+  }.prdctItems{
+     width: 100% !important;
+     margin-left: 0 !important;
+  }.sec3head{
+    font-size: 32px !important;
+  }.instaSec{
+    font-size: 18px !important;
+  }.instaImg{
+    width: 23%;
+  }.md-serv{
+    padding: 60px 0px !important;
+  }.services{
+    padding: 8px !important;
+  }.serv-1{
+    margin-left: 23px !important;
+  }
+  .md-Footer{
+    padding: 100px 30px !important;
+  }
+  .about-img{
+    width: 100%;
+  }.fields{
+    width: 45ch !important;
+  }
+}
+@media screen and (width: 1200px){
+  .list{
+    display: flex;
+    margin-left: 110px !important;
+  }.input{
+    font-size: 16px !important;
+  }.instaSec{
+    font-size: 42px !important;
+}.search{
+  margin-left: 25px !important;
+}.acount{
+  margin-left: 40px !important;
+}
+}
+.App{
+    margin-top: 2px;
+    margin-left: 18px;
+    display: flex;
+}
+.App input{
+    /* width: 255px; */
+    height: 35px;
+    margin-left: 20px;
+}
+.user{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: white;
 }
 
-@media screen and (width:450px) {
-.banner{
-    width: 1225px !important;
-    height: 189vh !important;
-}
-.bannerForm{
-  width: 100% !important;
-  margin-left: 220px;
-  height: 203vh !important;
-  margin-top: -63px;
-  padding-top: 10px;
-}
-.login{
-  padding-left: 0px;
-}
-.bannerpara{
-  padding-left: -8px;
-}
-.feildInput{
-    width: 100%!important;
-    left: -4px;
-}
-.paswrd{
-  padding-left: 10px;
-}
-.btnContent{
-   width: 100% ; 
-}
-.btn{
-  width: 45%;
-}
-.cardbg::before{
-  width: 1225px !important;
-}
-.nav{
-  width: 100% !important;
-}
-
-
-}

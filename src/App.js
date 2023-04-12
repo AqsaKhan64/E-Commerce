@@ -1,26 +1,31 @@
 // import logo from './logo.svg';
-// import './App.css';
+import Home from './components/Home';
+import About from './components/About';
+import ProductDetails from './components/ProductDetails';
+import Product from './components/Product';
 import './index.css';
-import React from "react";
-import Login from "./pages/Login";
-import Card from './pages/Card';
-import Catagories from './pages/Catagories';
-import Card2 from './pages/Card2';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import userData from './components/userData.json'
 
-
-// import Home from './components/Home'
 function App() {
+  
   return (
     <>
-      {/* <Home /> */}
-      {/* <Login />  */}
-      <Card />
-      {/* <Catagories />
-      <Card2/> */}
-     
+   
+   <BrowserRouter>
+      <Routes>
+      <Route path='home' element={<Home/>} />
+      <Route path="product" element={<Product/>} />
+      <Route path="about" element={<About />} />
+      <Route path="productdetails" element={<ProductDetails />} />
+      </Routes>
+    </BrowserRouter>
     
     </>
   );
 }
 
 export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

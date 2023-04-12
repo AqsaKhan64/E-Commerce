@@ -9,7 +9,10 @@ import BlogPosts from '../components/BlogPosts';
 
 function Blog() {
   return (
+    
+    
     <Container>
+      <NavBar />
     <Box >
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={8} lg={8}>
@@ -20,8 +23,9 @@ function Blog() {
         </Grid>
       </Grid>
     </Box>
-      
+         <Footer />  
     </Container>
+  
   )
 }
 

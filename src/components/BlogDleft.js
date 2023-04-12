@@ -21,7 +21,6 @@ const BlogDleft = () => {
     <Container>
       <Box>
         <img src={heroimg} style={{ width: "100%" }} />
-        <button onClick={() => ProductDetail}>  view Details</button>
         <h2>
           Second divided from form fish beast made every of seas all gathered us
           saying he our

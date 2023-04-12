@@ -19,6 +19,7 @@ import img6 from '../images/insta2.webp'
 import NavBar from './NavBar';
 import Footer from './Footer';
 import { useNavigate } from 'react-router-dom';
+import ProductDetailPage from '../pages/ProductDetailPage';
 const Mainnav={
   backgroundColor: "#F2E1D9",
   position: "relative",
@@ -136,7 +137,7 @@ function Home() {
   const navigate = useNavigate();
 
 const gotodetailpage = () =>{
-  navigate("/About")
+  navigate("/ProductDetailPage")
 };
   return (
     <>
@@ -171,6 +172,7 @@ const gotodetailpage = () =>{
         <CardContent>
           <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
           <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+{/* -------------------------------detail page button by Muzamil */}
           <Button onClick={() => gotodetailpage()} sx={banBtn}> See More</Button>
         </CardContent>
         </CardActionArea>
@@ -183,6 +185,8 @@ const gotodetailpage = () =>{
         <CardContent>
           <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
           <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+{/* -------------------------------detail page button by Muzamil */}
+          <Button onClick={() => gotodetailpage()} sx={banBtn}> See More</Button>
         </CardContent>
         </CardActionArea>
       </Card>
@@ -194,6 +198,8 @@ const gotodetailpage = () =>{
         <CardContent>
           <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
           <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+{/* -------------------------------detail page button by Muzamil */}
+          <Button onClick={() => gotodetailpage()} sx={banBtn}> See More</Button>
         </CardContent>
         </CardActionArea>
       </Card>
@@ -227,6 +233,8 @@ const gotodetailpage = () =>{
         <CardContent>
           <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
           <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+{/* -------------------------------detail page button by Muzamil */}
+          <Button onClick={() => gotodetailpage()} sx={banBtn}> See More</Button>
         </CardContent>
         </CardActionArea>
       </Card>
@@ -238,6 +246,8 @@ const gotodetailpage = () =>{
         <CardContent>
           <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
           <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+{/* -------------------------------detail page button by Muzamil */}
+          <Button onClick={() => gotodetailpage()} sx={banBtn}> See More</Button>
         </CardContent>
         </CardActionArea>
       </Card>
@@ -249,6 +259,8 @@ const gotodetailpage = () =>{
         <CardContent>
           <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
           <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+{/* -------------------------------detail page button by Muzamil */}
+          <Button onClick={() => gotodetailpage()} sx={banBtn}> See More</Button>
         </CardContent>
         </CardActionArea>
       </Card>
@@ -288,6 +300,8 @@ const gotodetailpage = () =>{
         <CardContent>
           <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
           <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+{/* -------------------------------detail page button by Muzamil */}
+          <Button onClick={() => gotodetailpage()} sx={banBtn}> See More</Button>
         </CardContent>
         </CardActionArea>
       </Card>
@@ -299,6 +313,8 @@ const gotodetailpage = () =>{
         <CardContent>
           <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
           <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+{/* -------------------------------detail page button by Muzamil */}
+          <Button onClick={() => gotodetailpage()} sx={banBtn}> See More</Button>
         </CardContent>
         </CardActionArea>
       </Card>
@@ -310,6 +326,8 @@ const gotodetailpage = () =>{
         <CardContent>
           <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
           <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+{/* -------------------------------detail page button by Muzamil */}
+          <Button onClick={() => gotodetailpage()} sx={banBtn}> See More</Button>
         </CardContent>
         </CardActionArea>
       </Card>

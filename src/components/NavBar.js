@@ -136,18 +136,20 @@ function NavBar() {
                </Link>
                 <Tab className='list1' sx={styles.menu}  label="page"
                 aria-owns={anchorEl ? "simple-menu" : undefined}
-                aria-haspopup="true"
+                // aria-haspopup="true"
                 onClick={handleClick}
                 onMouseOver={handleClick}
                 />
                 <Menu
-        id="simple-menu"
+        // id="simple-menu"
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
         onClose={handleClose}
         MenuListProps={{ onMouseLeave: handleClose }}
       >
-        <MenuItem onClick={handleClose} sx={styles.menu}>Login</MenuItem>
+    
+ <MenuItem onClick={handleClose} sx={styles.menu}>Login</MenuItem>
+ 
         <MenuItem onClick={handleClose} sx={styles.menu}>Cart</MenuItem>
         <MenuItem onClick={handleClose} sx={styles.menu}>Categories</MenuItem>
         <MenuItem onClick={handleClose} sx={styles.menu}>Checkout</MenuItem>
@@ -155,13 +157,13 @@ function NavBar() {
       </Menu>
                 <Tab className='list1'  sx={styles.menu} label="Blog" 
                 aria-owns={menu1 ? "simple-menu1" : undefined}
-                aria-haspopup="true"
+                // aria-haspopup="true"
                 onClick={MenuClick}
                 onMouseOver={MenuClick}/>
                
                 <Menu
-        style={items}
-        id="simple-menu1"
+        // style={items}
+        // id="simple-menu"
         menu1={menu1}
         open={Boolean(menu1)}
         onClose={MenuClose}

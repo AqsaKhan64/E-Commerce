@@ -1,4 +1,4 @@
-import { Container, Typography, Button, Divider, Grid } from '@mui/material'
+import { Container, Typography,Box, Button, Divider, Grid } from '@mui/material'
 import React from 'react'
 import "../index.css";
 import ElementButtons from '../components/ElementButtons';
@@ -11,10 +11,31 @@ import ElementBlockqoute from '../components/ElementBlockqoute';
 import ElementTable from '../components/ElementTable';
 import ElementList from '../components/ElementList';
 import ElemenTextSample from '../components/ElemenTextSample';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+const pgIcon={
+  fontSize: "11px",
+ }
+ const blog={
+  marginTop: "230px"
+ }
 const Elements = () => {
   return (
     <>
-      <Container>
+    <Grid>
+      <NavBar/>
+    </Grid>
+    <Grid item container>
+        <Grid className='prdct-ban' item sm={12}>
+        <Box className='bannerImg'>
+            <Box className='ban-text'>
+            <Typography sx={{color: "white", fontWeight: "900"}} variant="h3">ELEMENTS</Typography>
+            <Typography sx={{color: "white", mt: 3}} variant="p">Home  <i style={pgIcon} class="fa-regular fa-greater-than"></i> ELEMENTS</Typography>
+            </Box>
+          </Box>
+        </Grid>
+    </Grid>
+      <Container style={blog}>
         <ElemenTextSample /> <Divider />
         <ElementButtons /> <Divider />
         <ElementAlignment /> <Divider />
@@ -32,6 +53,9 @@ const Elements = () => {
           </Grid>
         </Grid>
       </Container>
+      <Grid>
+      <Footer/>
+    </Grid>
     </>
   );
 }

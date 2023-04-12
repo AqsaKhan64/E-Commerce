@@ -1,7 +1,7 @@
 import { Button, createTheme, ThemeProvider, Typography} from "@mui/material";
 import { Box } from "@mui/system";
 import IconButton from "@mui/material/IconButton";
-import SearchIcon from "@mui/icons-material/Search";
+// import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
@@ -65,7 +65,7 @@ export default function Sidepanel() {
       <Box className="side_pane">
         <TextField label="Search Keywords" variant="outlined" sx={{width:'84%',height:'10px'}} />
         <IconButton aria-label="SearchIcon" sx={{backgroundColor:'#FD8F5F',color:'white', borderRadius:0,width:'50px', height:'56px'}}> 
-          <SearchIcon  />
+          {/* <SearchIcon  /> */}
         </IconButton><br></br>
         <Button variant="outlined" color="error" sx={styles.root} >SEARCH </Button>
       </Box>

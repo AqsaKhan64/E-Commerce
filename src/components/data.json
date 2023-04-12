@@ -8,35 +8,35 @@
     },
     {
         "id": 2,
-        "title": "Sofa",
+        "title": "couch",
         "description": "The Darcy bedside locker has been designed.",
         "image": "./images/sofa2.webp",
         "price": "$365"
     },
     {
         "id": 3,
-        "title": "Sofa",
+        "title": "divan",
         "description": "The Darcy bedside locker has been designed.",
         "image": "./images/sofa3.webp",
         "price": "$365"
     },
     {
         "id": 4,
-        "title": "Sofa",
+        "title": "settee",
         "description": "The Darcy bedside locker has been designed.",
         "image": "./images/product2.webp",
         "price": "$365"
     },
     {
         "id": 5,
-        "title": "Sofa",
+        "title": "squab",
         "description": "The Darcy bedside locker has been designed.",
         "image": "./images/product3.webp",
         "price": "$365"
     },
     {
         "id": 6,
-        "title": "Sofa",
+        "title": "Sofa bed",
         "description": "The Darcy bedside locker has been designed.",
         "image": "./images/product4.webp",
         "price": "$365"

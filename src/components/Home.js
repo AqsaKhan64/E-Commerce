@@ -18,6 +18,7 @@ import img5 from '../images/insta1.webp'
 import img6 from '../images/insta2.webp'
 import NavBar from './NavBar';
 import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
 const Mainnav={
   backgroundColor: "#F2E1D9",
   position: "relative",
@@ -131,6 +132,12 @@ const instaHead={
   marginTop: "10px"
 }
 function Home() {
+  
+  const navigate = useNavigate();
+
+const gotodetailpage = () =>{
+  navigate("/About")
+};
   return (
     <>
     <div style={bgImg} className='banImg'>
@@ -164,6 +171,7 @@ function Home() {
         <CardContent>
           <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
           <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>
+          <Button onClick={() => gotodetailpage()} sx={banBtn}> See More</Button>
         </CardContent>
         </CardActionArea>
       </Card>

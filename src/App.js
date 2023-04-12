@@ -17,7 +17,7 @@ function App() {
       <Route path="product" element={<Product/>} />
       <Route path="about" element={<About />} />
       <Route path="productdetails" element={<ProductDetails />} />
-
+~~
       </Routes>
     </BrowserRouter>
     </>

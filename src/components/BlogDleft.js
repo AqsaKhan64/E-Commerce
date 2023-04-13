@@ -1,9 +1,9 @@
 import { Divider, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-// import PersonIcon from "@mui/icons-material/Person";
+import PersonIcon from "@mui/icons-material/Person";
 import Container from "@mui/material/Container";
-// import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded";
-// import FavoriteIcon from "@mui/icons-material/Favorite";
+import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import "../index.css";
 import React from "react";
 import Form from "../components/Form";
@@ -19,7 +19,7 @@ const comment3 = require("../images/comment_3.png.webp");
 const BlogDleft = () => {
   return (
     <Container>
-      <Box>
+      <Box data-aos="fade-up">
         <img src={heroimg} style={{ width: "100%" }} />
         <h2>
           Second divided from form fish beast made every of seas all gathered us
@@ -30,14 +30,14 @@ const BlogDleft = () => {
             className="list-item"
             sx={{ fontSize: 14, display: "inline-block" }}
           >
-            {/* <PersonIcon /> Travel,lifestyle */}
+            <PersonIcon /> Travel,lifestyle
           </Typography>{" "}
           |{" "}
           <Typography
             className="list-item"
             sx={{ fontSize: 14, display: "inline-block" }}
           >
-            {/* <QuestionAnswerRoundedIcon /> 03 Comments */}
+            <QuestionAnswerRoundedIcon /> 03 Comments
           </Typography>
         </Box>
         <Typography className="blog-detail">
@@ -93,7 +93,7 @@ const BlogDleft = () => {
       >
         <Typography>
           {" "}
-          {/* <FavoriteIcon /> Lily and 4 people like this */}
+          <FavoriteIcon /> Lily and 4 people like this
         </Typography>
         <Typography> </Typography>{" "}
       </Box>
@@ -294,7 +294,7 @@ const BlogDleft = () => {
             </Box>
           </Box>
       <Divider />
-      <Box>
+      <Box data-aos="fade-up">
         <h5> Leave a Reply</h5>
         <Form />
       </Box>

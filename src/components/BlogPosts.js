@@ -1,6 +1,6 @@
 import { Container,Paper,Typography,Box,Pagination,Stack,Grid,} from "@mui/material";
-// import PersonIcon from "@mui/icons-material/Person";
-// import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded";
+import PersonIcon from "@mui/icons-material/Person";
+import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded";
 import "../index.css";
 import React from "react";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -18,7 +18,7 @@ const BlogPosts = () => {
   return (
     <>
       <Grid container spacing={4}>
-        <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }}>
+        <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }} data-aos="fade-up"> 
         <img src={blog1} style={{ width: "100%" }}  />  
           <h2 className="orange-hover">
             Google inks pact for new 35-storey office
@@ -33,18 +33,18 @@ const BlogPosts = () => {
               className="list-item"
               sx={{ fontSize: 14, display: "inline-block" }}
             >
-              {/* <PersonIcon /> Travel,lifestyle */}
+              <PersonIcon /> Travel,lifestyle
             </Typography>|<Typography
               className="list-item"
               sx={{ fontSize: 14, display: "inline-block" }}
             >
-              {/* <QuestionAnswerRoundedIcon /> 03 Comments */}
+              <QuestionAnswerRoundedIcon /> 03 Comments
             </Typography>
           </Box>
         </Paper>
 
         <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }}>
-          <Box>
+          <Box data-aos="fade-up">
             <img src={blog2} style={{ width: "100%" }} />
             <h2 className="orange-hover">
               Google inks pact for new 35-storey office
@@ -59,20 +59,20 @@ const BlogPosts = () => {
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                {/* <PersonIcon /> Travel,lifestyle */}
+                <PersonIcon /> Travel,lifestyle
               </Typography>{" "}
               |{" "}
               <Typography
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                {/* <QuestionAnswerRoundedIcon /> 03 Comments */}
+                <QuestionAnswerRoundedIcon /> 03 Comments
               </Typography>
             </Box>
           </Box>
         </Paper>
-        <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }}>
-          <Box>
+        <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }} >
+          <Box data-aos="fade-up">
             <img src={blog3} style={{ width: "100%" }} />
             <h2 className="orange-hover">
               Google inks pact for new 35-storey office
@@ -87,20 +87,20 @@ const BlogPosts = () => {
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                {/* <PersonIcon /> Travel,lifestyle */}
+                <PersonIcon /> Travel,lifestyle
               </Typography>{" "}
               |{" "}
               <Typography
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                {/* <QuestionAnswerRoundedIcon /> 03 Comments */}
+                <QuestionAnswerRoundedIcon /> 03 Comments
               </Typography>
             </Box>
           </Box>
         </Paper>
-        <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }}>
-          <Box>
+        <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }} >
+          <Box data-aos="fade-up">
             <img src={blog4} style={{ width: "100%" }} />
             <h2 className="orange-hover">
               Google inks pact for new 35-storey office
@@ -115,20 +115,20 @@ const BlogPosts = () => {
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                {/* <PersonIcon /> Travel,lifestyle */}
+                <PersonIcon /> Travel,lifestyle
               </Typography>{" "}
               |{" "}
               <Typography
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                {/* <QuestionAnswerRoundedIcon /> 03 Comments */}
+                <QuestionAnswerRoundedIcon /> 03 Comments
               </Typography>
             </Box>
           </Box>
         </Paper>
         <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }}>
-          <Box>
+          <Box data-aos="fade-up">
             <img src={blog5} style={{ width: "100%" }} />
             <h2 className="orange-hover">
               Google inks pact for new 35-storey office
@@ -143,14 +143,14 @@ const BlogPosts = () => {
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                {/* <PersonIcon /> Travel,lifestyle */}
+                <PersonIcon /> Travel,lifestyle
               </Typography>{" "}
               |{" "}
               <Typography
                 className="list-item"
                 sx={{ fontSize: 14, display: "inline-block" }}
               >
-                {/* <QuestionAnswerRoundedIcon /> 03 Comments */}
+                <QuestionAnswerRoundedIcon /> 03 Comments
               </Typography>
             </Box>
           </Box>
@@ -159,7 +159,7 @@ const BlogPosts = () => {
           spacing={2}
           sx={{ display: "flex", alignItems: "center", margin: 10 }}
         >
-          <Pagination count={2} variant="outlined" shape="rounded" />
+          <Pagination count={2} variant="outlined" shape="rounded" data-aos="fade-up"/>
         </Stack>
       </Grid>
     </>

@@ -1,7 +1,7 @@
 import { Button, createTheme, ThemeProvider, Typography} from "@mui/material";
 import { Box } from "@mui/system";
 import IconButton from "@mui/material/IconButton";
-// import SearchIcon from "@mui/icons-material/Search";
+import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
@@ -62,14 +62,14 @@ export default function Sidepanel() {
 
   return (
     <ThemeProvider theme={formTheme}>
-      <Box className="side_pane">
+      <Box className="side_pane" data-aos="fade-up">
         <TextField label="Search Keywords" variant="outlined" sx={{width:'84%',height:'10px'}} />
         <IconButton aria-label="SearchIcon" sx={{backgroundColor:'#FD8F5F',color:'white', borderRadius:0,width:'50px', height:'56px'}}> 
-          {/* <SearchIcon  /> */}
+          <SearchIcon  />
         </IconButton><br></br>
         <Button variant="outlined" color="error" sx={styles.root} >SEARCH </Button>
       </Box>
-      <Box className="side_pane">
+      <Box className="side_pane" data-aos="fade-up">
         <h4>Category</h4>
         <ul className="Category-list">
           <li className="list-item btm-brdr">Restarant food (37)</li>
@@ -81,7 +81,7 @@ export default function Sidepanel() {
           <li className="list-item">Health care (21)</li>
         </ul>
       </Box>
-      <Box className="side_pane" >
+      <Box className="side_pane" data-aos="fade-up">
         <h4>Recent Post</h4>
         <Box component="span" sx={{lineHeight:1, display: "flex" , marginBottom:2}}>
           <img src={post1}/>
@@ -112,7 +112,7 @@ export default function Sidepanel() {
           <Typography sx={{ fontSize: 14, color:'gray',lineHeight:0}}> 01 Hours ago</Typography></Box>
         </Box>
       </Box>
-      <Box className="side_pane">
+      <Box className="side_pane" data-aos="fade-up">
         <h4>Tag Clouds</h4>
         <Button color="primary" variant="outlined" sx={tag}>project</Button>
         <Button color="primary" variant="outlined" sx={tag}>love</Button>
@@ -123,7 +123,7 @@ export default function Sidepanel() {
         <Button color="primary" variant="outlined" sx={tag}>design</Button>
         <Button color="primary" variant="outlined" sx={tag}>illustration</Button>
       </Box>
-      <Box className="side_pane">
+      <Box className="side_pane" data-aos="fade-up">
         <h4>Instagram Feeds</h4>
         <Box spacing={4}>
           <ImageList cols={3} gap={10}>
@@ -135,7 +135,7 @@ export default function Sidepanel() {
           </ImageList>
         </Box>
       </Box>
-      <Box className="side_pane">
+      <Box className="side_pane" data-aos="fade-up">
         <h4>Newsletter</h4>
         <TextField label="Enter email" variant="outlined"  sx={{width:'100%'}}/>
         <Button variant="outlined" color="error" sx={styles.root}>SUBSCRIBE</Button>

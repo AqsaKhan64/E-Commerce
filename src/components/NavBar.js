@@ -69,8 +69,11 @@ const Mainnav={
     display: "flex",
     marginLeft: "150px",
   }
+ const pageItems={
+  top: "17px"
+ }
   const items={
-    top: "-440px",
+    top: "65px",
     left: "690px"
   }
   const decor={
@@ -93,6 +96,7 @@ const Mainnav={
     marginLeft: "28px",
     marginTop: "11px"
   }
+
 function NavBar() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [menu1, setMenu] = useState(null);
@@ -142,12 +146,16 @@ function NavBar() {
                 />
                 <Menu
         id="simple-menu"
+        style={pageItems}
         anchorEl={anchorEl}
         open={Boolean(anchorEl)}
         onClose={handleClose}
         MenuListProps={{ onMouseLeave: handleClose }}
+        
       >
-        <MenuItem onClick={handleClose} sx={styles.menu}>Login</MenuItem>
+    
+ <MenuItem onClick={handleClose} sx={styles.menu}>Login</MenuItem>
+ 
         <MenuItem onClick={handleClose} sx={styles.menu}>Cart</MenuItem>
         <MenuItem onClick={handleClose} sx={styles.menu}>Categories</MenuItem>
         <MenuItem onClick={handleClose} sx={styles.menu}>Checkout</MenuItem>
@@ -160,14 +168,19 @@ function NavBar() {
                 onMouseOver={MenuClick}/>
                
                 <Menu
-        style={items}
         id="simple-menu1"
+        className='blog-Items'
+        style={items}
         menu1={menu1}
         open={Boolean(menu1)}
         onClose={MenuClose}
         MenuListProps={{ onMouseLeave: MenuClose }}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
       >
-        <Link style={decor} to='/blog'><MenuItem onClick={MenuClose} sx={styles.menu}>Blog</MenuItem></Link>
+        <Link  style={decor} to='/blog'><MenuItem onClick={MenuClose} sx={styles.menu}>Blog</MenuItem></Link>
         <Link style={decor} to='/blogDetails'><MenuItem onClick={MenuClose} sx={styles.menu}>Blog Details</MenuItem></Link>
         <Link style={decor} to='/elements'><MenuItem onClick={MenuClose} sx={styles.menu}>Elements</MenuItem></Link>
         </Menu>

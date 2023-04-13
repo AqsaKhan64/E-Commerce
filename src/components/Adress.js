@@ -1,8 +1,8 @@
 import React from 'react'
 import { Typography,Box } from '@mui/material'
-// import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-// import TabletMacOutlinedIcon from '@mui/icons-material/TabletMacOutlined';
-// import LocalPostOfficeOutlinedIcon from '@mui/icons-material/LocalPostOfficeOutlined';
+import {HomeOutlined} from '@mui/icons-material'
+import TabletMacOutlinedIcon from '@mui/icons-material/TabletMacOutlined';
+import LocalPostOfficeOutlinedIcon from '@mui/icons-material/LocalPostOfficeOutlined';
 
 
 const Adress = () => {
@@ -12,7 +12,7 @@ const Adress = () => {
       <Box  component="span"
         sx={{ display: "flex", marginBottom: 4 , paddingLeft:10}} >
         <Typography>
-          {/* <HomeOutlinedIcon sx={{ fontSize: 40, color: "#8F9195" }} /> */}
+          <HomeOutlined sx={{ fontSize: 40, color: "#8F9195" }} />
         </Typography>
         <Box component="span" sx={{ paddingLeft: 1 }}>
           <Typography sx={{ fontSize: 16, fontWeight: 500, lineHeight: 1.5 }}>
@@ -25,9 +25,9 @@ const Adress = () => {
       </Box>
       <Box  component="span"
         sx={{ display: "flex", marginBottom: 4 , paddingLeft:10}} >
-        {/* <Typography>
+        <Typography>
           <TabletMacOutlinedIcon sx={{ fontSize: 30, color: "#8F9195" }} />
-        </Typography> */}
+        </Typography>
         <Box component="span" sx={{ paddingLeft: 2}}>
           <Typography sx={{ fontSize: 16, fontWeight: 500, lineHeight: 1.5 }}>
           +1 253 565 2365
@@ -39,9 +39,9 @@ const Adress = () => {
       </Box>
       <Box  component="span"
         sx={{ display: "flex", marginBottom: 4 , paddingLeft:10}} >
-        {/* <Typography>
+        <Typography>
           <LocalPostOfficeOutlinedIcon sx={{ fontSize: 35, color: "#8F9195" }} />
-        </Typography> */}
+        </Typography>
         <Box component="span" sx={{ paddingLeft: 2 }}>
           <Typography sx={{ fontSize: 16, fontWeight: 500, lineHeight: 1.5 }}>
           support@colorlib.com

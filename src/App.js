@@ -10,14 +10,14 @@ import Contact from './pages/Contact'
 import './index.css';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ProductDetailPage from './pages/ProductDetailPage';
+// import userData from './components/userData.json'
 
 function App() {
+  
   return (
     <>
-    
-  <BrowserRouter> 
-
+   
+   <BrowserRouter>
       <Routes>
       <Route path='home' element={<Home/>} />
       <Route path="product" element={<Product/>} />
@@ -31,6 +31,7 @@ function App() {
 
       </Routes>
     </BrowserRouter>
+    
     </>
   );
 }

@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import Grid from '@mui/material/Grid';
 import Menu from '@mui/material/Menu';
 import Box from '@mui/material/Box'
-import Button from '@mui/material/Button'
-import TextField from '@mui/material/TextField'
 import Typography from '@mui/material/Typography';
 import Toolbar from '@mui/material/Toolbar';
 import Tab from '@mui/material/Tab';
@@ -12,6 +10,7 @@ import img1 from '../images/logo.png.webp'
 import img2 from '../images/bg.webp'
 import cartImg from '../images/card.svg'
 import { Link } from 'react-router-dom';
+import ProductDetails from './ProductDetails';
 
 const Mainnav={
     backgroundColor: "#F2E1D9",
@@ -45,16 +44,16 @@ const Mainnav={
     }
   }
   const mainSearch={
-     marginLeft: "50px"
+    //  marginLeft: "50px"
   }
-  const search={
-    border: "none",
-    background: "none",
-    borderBottom: "1px solid black",
-    fontSize: "18px",
-    lineHeight: "35px",
+  // const search={
+  //   border: "none",
+  //   background: "none",
+  //   borderBottom: "1px solid black",
+  //   fontSize: "18px",
+  //   lineHeight: "35px",
     
-  }
+  // }
   const navIcon={
     marginLeft: "-25px",
     marginBottom: "-5px",
@@ -67,7 +66,7 @@ const Mainnav={
   }
   const mainAcount={
     display: "flex",
-    marginLeft: "150px",
+    marginLeft: "70px",
   }
   const items={
     top: "65px",
@@ -94,8 +93,10 @@ const Mainnav={
     marginTop: "11px"
   }
 function NavBar() {
+  
   const [anchorEl, setAnchorEl] = useState(null);
   const [menu1, setMenu] = useState(null);
+
   function handleClick(event) {
     if (anchorEl !== event.currentTarget) {
       setAnchorEl(event.currentTarget);
@@ -185,11 +186,11 @@ function NavBar() {
                 <Tab className='list1' sx={styles.menu}  label="Contact"/>
           </Link>
               </Typography>
-              {/* <Box style={mainSearch} className='search'>
+              <Box style={mainSearch} className='search'>
                 <input className='input' style={search} type="text" placeholder='Search Product'/>
-  
+                {/* <SearchIcon style={navIcon}/> */}
                 <i style={navIcon} class="fa-solid fa-magnifying-glass"></i>
-              </Box> */}
+              </Box>
               <Box style={mainAcount} className='acount'>
                 <Typography className='aount1'  style={acount}>My Account</Typography>
                 <Box style={mainShop}>
@@ -200,6 +201,7 @@ function NavBar() {
             </Toolbar>
      </Grid>
     </Grid>
+    {/* <h1>valuwe</h1> */}
     </div>
   )
 }

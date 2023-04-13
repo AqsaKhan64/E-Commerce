@@ -11,7 +11,7 @@ import img2 from '../images/bg.webp'
 import img3 from '../images/chair1.webp'
 import img4 from '../images/product1.webp'
 import img5 from '../images/product2.webp'
-import img6 from '../images/sofa2.webp'
+// import img6 from '../images/sofa2.webp'
 import img7 from '../images/person1.webp'
 import img8 from '../images/person2.webp'
 import img9 from '../images/person3.webp'
@@ -131,7 +131,7 @@ function ProductDetails() {
             <img className='sub-p-Img' style={pimg} src={img3}/>
             <img className='sub-p-Img' style={pimg} src={img4}/>
             <img className='sub-p-Img' style={pimg} src={img5}/>
-            <img className='sub-p-Img' style={pimg} src={img6}/>
+            {/* <img className='sub-p-Img' style={pimg} src={img6}/> */}
          </Box>
          </Box>
         </Grid>

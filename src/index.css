@@ -1,9 +1,12 @@
+ *{
+    font-family: 'Poppins', sans-serif;
+  }
 body {
   margin: 0;
 }
-*{
+/* *{
   font-family: 'Poppins', sans-serif ;
-}
+} */
 .bannerImg{
   position: relative;
 }
@@ -405,5 +408,20 @@ body {
   margin-left: 40px !important;
 }
 }
-
+.App{
+    margin-top: 2px;
+    margin-left: 18px;
+    display: flex;
+}
+.App input{
+    /* width: 255px; */
+    height: 35px;
+    margin-left: 20px;
+}
+.user{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
 

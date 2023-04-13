@@ -31,7 +31,7 @@ const Mainnav={
     top: "0",
   }
   const nav={
-    marginLeft: "150px",
+    marginLeft: "250px",
     padding: "17px 0px", 
   }
   const styles={
@@ -67,11 +67,11 @@ const Mainnav={
   }
   const mainAcount={
     display: "flex",
-    marginLeft: "70px",
+    marginLeft: "150px",
   }
   const items={
     top: "-440px",
-    left: "576px"
+    left: "690px"
   }
   const decor={
     textDecoration: "none",
@@ -114,6 +114,7 @@ function NavBar() {
   function MenuClose() {
     setMenu(null);
   }
+  
   return (
     <div>
      
@@ -157,6 +158,7 @@ function NavBar() {
                 aria-haspopup="true"
                 onClick={MenuClick}
                 onMouseOver={MenuClick}/>
+               
                 <Menu
         style={items}
         id="simple-menu1"
@@ -165,17 +167,19 @@ function NavBar() {
         onClose={MenuClose}
         MenuListProps={{ onMouseLeave: MenuClose }}
       >
-        <MenuItem onClick={MenuClose} sx={styles.menu}>Blog</MenuItem>
-        <MenuItem onClick={MenuClose} sx={styles.menu}>Blog Details</MenuItem>
-        <MenuItem onClick={MenuClose} sx={styles.menu}>Elements</MenuItem>
+        <Link style={decor} to='/blog'><MenuItem onClick={MenuClose} sx={styles.menu}>Blog</MenuItem></Link>
+        <Link style={decor} to='/blogDetails'><MenuItem onClick={MenuClose} sx={styles.menu}>Blog Details</MenuItem></Link>
+        <Link style={decor} to='/elements'><MenuItem onClick={MenuClose} sx={styles.menu}>Elements</MenuItem></Link>
         </Menu>
+        <Link style={decor} to='/contact'>
                 <Tab className='list1' sx={styles.menu}  label="Contact"/>
+          </Link>
               </Typography>
-              <Box style={mainSearch} className='search'>
+              {/* <Box style={mainSearch} className='search'>
                 <input className='input' style={search} type="text" placeholder='Search Product'/>
-                {/* <SearchIcon style={navIcon}/> */}
+  
                 <i style={navIcon} class="fa-solid fa-magnifying-glass"></i>
-              </Box>
+              </Box> */}
               <Box style={mainAcount} className='acount'>
                 <Typography className='aount1'  style={acount}>My Account</Typography>
                 <Box style={mainShop}>

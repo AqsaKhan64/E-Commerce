@@ -41,13 +41,14 @@ const products={
   fontWeight: "bold",
   marginBottom: "15px"
 }
-
-
 const sec3Btn={
   marginTop: "30px",
   textAlign: "center",
   margin: "auto",
   width: "15%"
+}
+const sList={
+  marginLeft: "25px"
 }
 const style={
   root:{
@@ -74,6 +75,25 @@ function Product() {
   function updateToggle(id){
     setToggle(id)
   }
+  const [value, setValue] = useState('');
+
+  const dataSearch = (event) => {
+    setValue(event.target.value);
+  }
+   const onSearch = Data.filter((item)=>{
+     return item.title.toLowerCase().includes(value.toLowerCase())
+   })
+   const searchTable = Data2.filter((item)=>{
+    return item.title.toLowerCase().includes(value.toLowerCase())
+  })
+  const searchChair = Data3.filter((item)=>{
+    return item.title.toLowerCase().includes(value.toLowerCase())
+  })
+  const searchBed = Data4.filter((item)=>{
+    return item.title.toLowerCase().includes(value.toLowerCase())
+  })
+
+ console.log(onSearch)
   return (
     <div>
      <Grid>
@@ -99,13 +119,16 @@ function Product() {
           <Tab className={toggle === 2 ? "tabs active-tabs" : "tabs"} onClick={()=>updateToggle(2)} label="Table"/>
           <Tab className={toggle === 3 ? "tabs active-tabs" : "tabs"} onClick={()=>updateToggle(3)} label="Chair"/>
           <Tab className={toggle === 4 ? "tabs active-tabs" : "tabs"} onClick={()=>updateToggle(4)} label="Bed"/>
+          {/* <div className="App"> */}
+                <input style={sList} type="text" value={value} onChange={dataSearch} placeholder='Serach...' />
+        {/* </div> */}
         </Typography>
+      
     </Box>
     <Box className={toggle === 1 ? "show-items" : "items"}>
     <Box className="cards">
     {
-      Data.map(record=>{
-  
+      onSearch?.map(record=>{
         return(
           <>
             <Card style={cardInfo} >
@@ -127,7 +150,7 @@ function Product() {
      <Box className={toggle === 2 ? "show-items " : "items"}>
       <Box className="cards">
       {
-        Data2.map(record=>{
+        searchTable?.map(record=>{
     
           return(
             <>
@@ -150,7 +173,7 @@ function Product() {
        <Box className={toggle === 3 ? "show-items" : "items"}>
       <Box className="cards">
       {
-        Data3.map(record=>{
+        searchChair.map(record=>{
     
           return(
             <>
@@ -173,7 +196,7 @@ function Product() {
        <Box className={toggle === 4 ? "show-items" : "items"}>
       <Box className="cards">
       {
-        Data4.map(record=>{
+        searchBed.map(record=>{
     
           return(
             <>

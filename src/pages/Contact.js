@@ -39,7 +39,7 @@ function contact() {
         </Grid>
       </Grid>
     </Container>
-    <Grid>
+    <Grid data-aos="fade-up">
       <Footer/>
     </Grid>
     </>

@@ -30,7 +30,7 @@ function Blog() {
         </Grid>
     </Grid>
     <Container>
-    <Box style={blog}>
+    <Box style={blog} >
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={8} lg={8}>
           <Box><BlogPosts /></Box>
@@ -41,7 +41,7 @@ function Blog() {
       </Grid>
     </Box>
     </Container>
-    <Grid>
+    <Grid data-aos="fade-up">
       <Footer/>
     </Grid>
     </>

@@ -169,7 +169,11 @@ body {
     display: flex;
     margin-left: 25px !important;
     padding: 0 !important;
-  }.list1{
+  }.blog-Items{
+    top: 47px !important;
+    left: 466px !important;
+  }
+  .list1{
     font-size: 11px !important;
     font-weight: bold !important;
   }.css-cjctlb-MuiButtonBase-root-MuiTab-root{
@@ -230,7 +234,11 @@ body {
   .list{
     display: flex;
     margin-left: 110px !important;
-  }.input{
+  }
+  .blog-Items{
+    left: 565px !important;
+  }
+  .input{
     font-size: 16px !important;
   }.instaSec{
     font-size: 42px !important;

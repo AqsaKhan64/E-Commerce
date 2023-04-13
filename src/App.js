@@ -16,12 +16,13 @@ function App() {
     <>
     
   <BrowserRouter>
+ 
+
       <Routes>
       <Route path='home' element={<Home/>} />
       <Route path="product" element={<Product/>} />
       <Route path="about" element={<About />} />
       <Route path="productdetails" element={<ProductDetails />} />
-
       <Route path="blog" element={<Blog />} />
       <Route path="blogDetails" element={<BlogDeatails />} />
       <Route path="elements" element={<Elements />} />

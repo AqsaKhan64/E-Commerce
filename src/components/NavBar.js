@@ -70,7 +70,7 @@ const Mainnav={
     marginLeft: "150px",
   }
   const items={
-    top: "-440px",
+    top: "65px",
     left: "690px"
   }
   const decor={
@@ -159,15 +159,23 @@ function NavBar() {
                 aria-owns={menu1 ? "simple-menu1" : undefined}
                 // aria-haspopup="true"
                 onClick={MenuClick}
-                onMouseOver={MenuClick}/>
+                onMouseOver={MenuClick}
                
+                
+                />
+                 
+                 
                 <Menu
-        // style={items}
+        style={items}
         // id="simple-menu"
         menu1={menu1}
         open={Boolean(menu1)}
         onClose={MenuClose}
         MenuListProps={{ onMouseLeave: MenuClose }}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
       >
         <Link style={decor} to='/blog'><MenuItem onClick={MenuClose} sx={styles.menu}>Blog</MenuItem></Link>
         <Link style={decor} to='/blogDetails'><MenuItem onClick={MenuClose} sx={styles.menu}>Blog Details</MenuItem></Link>

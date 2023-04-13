@@ -156,7 +156,6 @@ const gotodetailpage = () =>{
       <Typography className='sec2' variant="h2" style={sec3head}>POPULAR PRODUCTS</Typography>
       <Typography className='subSec2' style={info}>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra <br></br> ornare, eros dolor interdum nulla.</Typography>
     </Box>
-
     <Grid className='prdctItems' item container style={mainP}>
     <Grid item sm={4}>
       <Card style={cardInfo} data-aos="fade-up">

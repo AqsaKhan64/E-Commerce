@@ -18,7 +18,7 @@ const BlogPosts = () => {
   return (
     <>
       <Grid container spacing={4}>
-        <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }}>
+        <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }} data-aos="fade-up"> 
         <img src={blog1} style={{ width: "100%" }}  />  
           <h2 className="orange-hover">
             Google inks pact for new 35-storey office
@@ -44,7 +44,7 @@ const BlogPosts = () => {
         </Paper>
 
         <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }}>
-          <Box>
+          <Box data-aos="fade-up">
             <img src={blog2} style={{ width: "100%" }} />
             <h2 className="orange-hover">
               Google inks pact for new 35-storey office
@@ -71,8 +71,8 @@ const BlogPosts = () => {
             </Box>
           </Box>
         </Paper>
-        <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }}>
-          <Box>
+        <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }} >
+          <Box data-aos="fade-up">
             <img src={blog3} style={{ width: "100%" }} />
             <h2 className="orange-hover">
               Google inks pact for new 35-storey office
@@ -99,8 +99,8 @@ const BlogPosts = () => {
             </Box>
           </Box>
         </Paper>
-        <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }}>
-          <Box>
+        <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }} >
+          <Box data-aos="fade-up">
             <img src={blog4} style={{ width: "100%" }} />
             <h2 className="orange-hover">
               Google inks pact for new 35-storey office
@@ -128,7 +128,7 @@ const BlogPosts = () => {
           </Box>
         </Paper>
         <Paper elevation={1} sx={{ p: 2, marginBottom: 5 }}>
-          <Box>
+          <Box data-aos="fade-up">
             <img src={blog5} style={{ width: "100%" }} />
             <h2 className="orange-hover">
               Google inks pact for new 35-storey office
@@ -159,7 +159,7 @@ const BlogPosts = () => {
           spacing={2}
           sx={{ display: "flex", alignItems: "center", margin: 10 }}
         >
-          <Pagination count={2} variant="outlined" shape="rounded" />
+          <Pagination count={2} variant="outlined" shape="rounded" data-aos="fade-up"/>
         </Stack>
       </Grid>
     </>

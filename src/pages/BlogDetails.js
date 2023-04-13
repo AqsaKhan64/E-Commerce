@@ -41,7 +41,7 @@ function BlogDetails() {
       </Grid>
     </>
   </Container>
-  <Grid>
+  <Grid data-aos="fade-up">
       <Footer/>
     </Grid>
     </>

@@ -19,7 +19,7 @@ const comment3 = require("../images/comment_3.png.webp");
 const BlogDleft = () => {
   return (
     <Container>
-      <Box>
+      <Box data-aos="fade-up">
         <img src={heroimg} style={{ width: "100%" }} />
         <h2>
           Second divided from form fish beast made every of seas all gathered us
@@ -294,7 +294,7 @@ const BlogDleft = () => {
             </Box>
           </Box>
       <Divider />
-      <Box>
+      <Box data-aos="fade-up">
         <h5> Leave a Reply</h5>
         <Form />
       </Box>

@@ -15,23 +15,25 @@ const pgIcon={
  }
 function Blog() {
   return (
+    
     <>
     <Grid>
-      <NavBar/>
+    <NavBar />
     </Grid>
     <Grid item container>
         <Grid className='prdct-ban' item sm={12}>
         <Box className='bannerImg'>
             <Box className='ban-text'>
             <Typography sx={{color: "white", fontWeight: "900"}} variant="h3">BLOG</Typography>
-            <Typography sx={{color: "white", mt: 3}} variant="p">Home  <i style={pgIcon} class="fa-regular fa-greater-than"></i>  BLOG</Typography>
+            <Typography sx={{color: "white", mt: 3}} variant="p">Home  <i style={pgIcon} class="fa-regular fa-greater-than"></i>  BLOG </Typography>
             </Box>
           </Box>
         </Grid>
     </Grid>
     <Container>
-    <Box style={blog}>
-      <Grid container spacing={2}>
+    <Box >
+      <Grid container spacing={2} style={blog}> 
+  
         <Grid item xs={12} sm={12} md={8} lg={8}>
           <Box><BlogPosts /></Box>
         </Grid>
@@ -39,12 +41,12 @@ function Blog() {
           <Box><Sidepanel /></Box>
         </Grid>
       </Grid>
-    </Box>
+    </Box> 
     </Container>
     <Grid>
-      <Footer/>
+       <Footer /> 
     </Grid>
-    </>
+  </>
   )
 }
 

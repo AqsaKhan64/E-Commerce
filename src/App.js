@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+
 import Home from './components/Home';
 import About from './components/About';
 import ProductDetails from './components/ProductDetails';
@@ -10,23 +10,25 @@ import Contact from './pages/Contact'
 import './index.css';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProductDetailPage from './pages/ProductDetailPage';
 
 function App() {
   return (
     <>
     
-  <BrowserRouter>
- 
+  <BrowserRouter> 
 
       <Routes>
       <Route path='home' element={<Home/>} />
       <Route path="product" element={<Product/>} />
       <Route path="about" element={<About />} />
-      <Route path="productdetails" element={<ProductDetails />} />
       <Route path="blog" element={<Blog />} />
       <Route path="blogDetails" element={<BlogDeatails />} />
       <Route path="elements" element={<Elements />} />
+      <Route path="productdetails" element={<ProductDetails />} />
+      <Route path="ProductDetailPage" element={<ProductDetailPage />} />
       <Route path="contact" element={<Contact />} />
+
       </Routes>
     </BrowserRouter>
     </>

@@ -4,7 +4,11 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 // import { AddBox, AddBoxOutlined, AddBoxRounded } from '@mui/icons-material';
-
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+const pgIcon={
+  fontSize: "11px",
+ }
 
 
 const cardheading = {
@@ -30,7 +34,7 @@ const cardheading = {
     left: '145px',
   }
   const CheckTitle={
-    paddingTop:'150px',
+    paddingTop:'180px',
   }
   const TitleHeading={
     margin:'22px 35px',
@@ -45,7 +49,7 @@ const cardheading = {
     marginLeft:'8px',
   }
   const Cardtxt={
-    marginLeft:'40px',
+    marginLeft:'70px',
     color:'#646D77',
   }
   const formControl={
@@ -53,7 +57,14 @@ const cardheading = {
     color:'#797979',
     marginTop:'30px',
     width:'50%',
-    marginLeft:'30px',
+    marginLeft:'70px',
+  }
+  const formControl1={
+    fontSize:'14px',
+    color:'#797979',
+    marginTop:'30px',
+    width:'50%',
+    marginLeft:'20px',
   }
   const cardForm={
     display:'flex',
@@ -70,6 +81,7 @@ const cardheading = {
   }
   const loginCheck={
     display:'flex',
+    marginLeft:'40px',
   }
   const formCheck={
     paddingTop:'28px',
@@ -151,14 +163,19 @@ const cardheading = {
 function Card2() {
   return (
     <>
-       <Box className='cardbg'>
-        <Typography style={cardheading} variant='h4'>CATAGORIES</Typography>
-         <Box style={nav}>
-          <Tab style={menu} label="Home" />
-          <ArrowBackIosIcon style={icon} />
-          <Tab style={menu} label="CATAGORIES" />
-         </Box>
-        </Box>
+    <Grid>
+    <NavBar />
+    </Grid>
+    <Grid item container>
+        <Grid className='prdct-ban' item sm={12}>
+        <Box className='bannerImg'>
+            <Box className='ban-text'>
+            <Typography sx={{color: "white", fontWeight: "900"}} variant="h3">CHECKOUT</Typography>
+            <Typography sx={{color: "white", mt: 3}} variant="p">Home  <i style={pgIcon} class="fa-regular fa-greater-than"></i>  CHECKOUT </Typography>
+            </Box>
+          </Box>
+        </Grid>
+    </Grid>
         <Box style={CheckTitle}>
         <Grid container item>
            <Grid item xs={12} style={TitleHeading}>
@@ -168,7 +185,7 @@ function Card2() {
            <Grid item xs={6}>
          <Box style={cardForm}>
            <TextField style={formControl} id="outlined-basic" variant="outlined" placeholder='Username Or Email Address *'/>
-           <TextField style={formControl} id="outlined-basic" variant="outlined" placeholder='password *'/>
+           <TextField style={formControl1} id="outlined-basic" variant="outlined" placeholder='password *'/>
            </Box>
            </Grid>
         </Grid>
@@ -278,7 +295,7 @@ function Card2() {
                 <Button style={btn1}>Proceed to Paypal</Button>
                 </Box>
         </Grid>
-         <Box style={FirstInput}>
+         {/* <Box style={FirstInput}>
          <FormGroup>
              <FormControlLabel control={<Checkbox defaultChecked />} label="Create an account?" />
          </FormGroup > 
@@ -290,11 +307,14 @@ function Card2() {
          <Grid item xs={8}>
          <textarea class="textarea" name="message" id="message" rows="1" placeholder="Order Notes"></textarea>
          </Grid>
-        </Box>
+        </Box> */}
         </Grid>
-           <br></br><br></br><br></br>
+           {/* <br></br><br></br><br></br> */}
      
       
+           <Grid>
+       <Footer /> 
+    </Grid>
        
     </>
   )

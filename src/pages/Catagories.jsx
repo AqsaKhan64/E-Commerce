@@ -11,7 +11,11 @@ import Slider from '@mui/material/Slider';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+const pgIcon={
+  fontSize: "11px",
+ }
 
 const cardheading = {
   color: 'white',
@@ -39,7 +43,9 @@ const icon = {
   left: '145px',
 }
 const category = {
-  padding: '120px',
+  paddingTop: '200px',
+  paddingLeft: "100px",
+  paddingBottom: "60px"
 }
 const categoryHeading = {
   fontSize: '36px',
@@ -85,6 +91,7 @@ const gridContent2 = {
 }
 const Select2 = {
   marginLeft: '620px',
+  marginBottom: '20px',
   height: '33px',
   background: '#fff',
   color: '#5d5d5d',
@@ -153,15 +160,21 @@ const banBtn={
 function Catagories() {
   return (
     <>
-
-      <div className='cardbg'>
-        <Typography style={cardheading} variant='h4'>CATAGORIES</Typography>
-        <div style={nav}>
-          <Tab style={menu} label="Home" />
-          <ArrowBackIosIcon style={icon} />
-          <Tab style={menu} label="CATAGORIES" />
-        </div>
-      </div>
+     <Grid>
+    <NavBar />
+    </Grid>
+    <Grid item container>
+        <Grid className='prdct-ban' item sm={12}>
+        <Box className='bannerImg'>
+            <Box className='ban-text'>
+            <Typography sx={{color: "white", fontWeight: "900"}} variant="h3">CATEGORIES</Typography>
+            <Typography sx={{color: "white", mt: 3}} variant="p">Home  <i style={pgIcon} class="fa-regular fa-greater-than"></i>  CATEGORIES </Typography>
+            </Box>
+          </Box>
+        </Grid>
+    </Grid>
+     
+     
       <div style={category}>
         <Typography style={categoryHeading} variant='h5'>SHOPING WITH US</Typography>
         <Typography style={categorypara}>Browse from 230 latest items</Typography>
@@ -327,8 +340,10 @@ function Catagories() {
       <Box style={catgoriBtn} >
        <Button style={banBtn}>Discover More</Button>
        </Box>
-       <br></br><br></br>
 
+       <Grid>
+       <Footer /> 
+    </Grid>
     </>
   )
 }

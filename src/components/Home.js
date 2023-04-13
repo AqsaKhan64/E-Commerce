@@ -156,19 +156,12 @@ const gotodetailpage = () =>{
       <Typography className='sec2' variant="h2" style={sec3head}>POPULAR PRODUCTS</Typography>
       <Typography className='subSec2' style={info}>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra <br></br> ornare, eros dolor interdum nulla.</Typography>
     </Box>
-    // <Box data-aos="fade-up">
-    //     <Nav style={prdcts} className='productNav'>
-    //       <Tab className='pList' style={sofa} label="sofa"/>
-    //       <Tab className='pList' label="Table"/>
-    //       <Tab className='pList' label="Chair"/>
-    //       <Tab className='pList' label="Bed"/>
-    //     </Nav>
-    // </Box>
+
     <Grid className='prdctItems' item container style={mainP}>
     <Grid item sm={4}>
       <Card style={cardInfo} data-aos="fade-up">
         <CardActionArea>
-        <CardMedia sx={{height: 250}} image={require('../images/sofa1.webp')}/>
+        <CardMedia sx={{height: 250}} image={require('../images/img7.jpg')}/>
         <CardContent>
           <Typography variant="h6">Bly Microfiber / Microsuede 56" Armless  Loveseat</Typography>
           <Typography sx={{mt: 1, color: "red"}} variant="h6">$367</Typography>

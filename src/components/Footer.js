@@ -3,10 +3,10 @@ import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-// import img7 from '../'
-// import img8 from '../images/services2.svg'
-// import img9 from '../images/services3.svg'
-// import img10 from '../images/services4.svg'
+import img7 from '../images/services2.svg'
+import img8 from '../images/services2.svg'
+import img9 from '../images/services3.svg'
+import img10 from '../images/services4.svg'
 import img11 from '../images/logo2_footer.png.webp'
 
 const service={
@@ -51,28 +51,28 @@ function Footer() {
       <Grid item container style={service} className='md-serv'>
       <Grid item lg={3} >
         <Box style={servHead} className='serv-1'>
-        {/* <img src={img7}/> */}
+        <img src={img7}/>
         <Typography variant="h6">Fast & Free Delivery</Typography>
         <Typography variant="p">Free delivery on all orders</Typography>
         </Box>
       </Grid>
       <Grid  item lg={3}>
         <Box className='services'>
-        {/* <img src={img8}/> */}
+        <img src={img8}/>
         <Typography variant="h6">Secure Payment</Typography>
         <Typography variant="p">Free delivery on all orders</Typography>
         </Box>
       </Grid>
       <Grid item lg={3}>
       <Box className='services'>
-        {/* <img src={img9}/> */}
+        <img src={img9}/>
         <Typography variant="h6">Money Back Guarantee</Typography>
         <Typography variant="p">Free delivery on all orders</Typography>
         </Box>
       </Grid>
       <Grid item lg={3}>
       <Box className='services'>
-        {/* <img src={img10}/> */}
+        <img src={img10}/>
         <Typography variant="h6">Online Support</Typography>
         <Typography variant="p">Free delivery on all orders</Typography>
       </Box>

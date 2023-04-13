@@ -6,7 +6,14 @@ import Nav from '@mui/material/Grid'
 import img3 from '../images/img3.jpeg'
 import img4 from '../images/img4.jpeg'
 import { useState } from 'react';
-
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+const pgIcon={
+  fontSize: "11px",
+ }
+ const blog={
+  marginTop: "120px"
+ }
 const cardheading ={
     color:'white',
     paddingTop:'96px',
@@ -57,6 +64,7 @@ width:'90%',
 const cardData={
  paddingTop:'50px',
  marginLeft:'10px',
+ fontSize: '13px',
 }
 const price={
   paddingTop:'50px',
@@ -109,7 +117,7 @@ const cardBottom1={
   marginLeft:'43px',
 }
 const labelContent={
-  marginLeft:'1140px',
+  marginLeft:'1100px',
   fontSize:'17px',
   color:'grey',
 }
@@ -165,25 +173,32 @@ function Card () {
 
   return (
     <>
-      
-      <Grid container>
-        <Grid item sm={12}>
-          <Box className='cardbg'>
-            <Typography style={cardheading} variant='h4'>CART LIST</Typography>
-            <Box style={nav}>
-              <Tab style={menu} label="Home" />
-              <ArrowBackIosIcon style={icon} />
-              <Tab style={menu} label="cart list" />
+        <Grid>
+    <NavBar />
+    </Grid>
+    <Grid item container>
+        <Grid className='prdct-ban' item sm={12}>
+        <Box className='bannerImg'>
+            <Box className='ban-text'>
+            <Typography sx={{color: "white", fontWeight: "900"}} variant="h3">CART</Typography>
+            <Typography sx={{color: "white", mt: 3}} variant="p">Home  <i style={pgIcon} class="fa-regular fa-greater-than"></i>  CART </Typography>
             </Box>
           </Box>
         </Grid>
-         <Grid item xs={12}>
+    </Grid>
+      <Grid container>
+       
+       
+         <Grid item xs={12} style={blog}>
           <Nav style={cardNav}>
             <Box style={line}>
-              <Grid item sm={12} className='nav'><Tab style={navContent1} label="Product" /> </Grid>
+              <Grid item sm={12} className='nav'>
+                <Tab style={navContent1} label="Product" /> 
+          
                 <Tab style={navContent} label="Time" />
                 <Tab style={navContent} label="Quantity" />
                 <Tab style={navContent} label="Price" /> 
+                </Grid>
               </Box>
           </Nav>
         </Grid>
@@ -269,7 +284,9 @@ function Card () {
      
         <Button style={btn3}>CLOSE COUPON</Button>
         <Box style={lastline}></Box>
-       <br></br>     
+        <Grid>
+       <Footer /> 
+    </Grid>  
     </>
   )
 }

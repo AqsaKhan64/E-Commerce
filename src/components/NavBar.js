@@ -16,7 +16,7 @@ const Mainnav={
     backgroundColor: "#F2E1D9",
     position: "relative",
     
-  }
+ }
   const bgImg={
     backgroundImage: `url(${img2})`,
     height: "700px",
@@ -120,7 +120,7 @@ function NavBar() {
     <div>
      
      
-        <Grid item container>
+      <Grid item container>
      <Grid item sm={12} className='mainNav'>
      <Toolbar style={Mainnav} className='main-nav'>
             <img className="Logo" src={img1} style={logo}/>
@@ -148,10 +148,10 @@ function NavBar() {
         onClose={handleClose}
         MenuListProps={{ onMouseLeave: handleClose }}
       >
-        <MenuItem onClick={handleClose} sx={styles.menu}>Login</MenuItem>
-        <MenuItem onClick={handleClose} sx={styles.menu}>Cart</MenuItem>
-        <MenuItem onClick={handleClose} sx={styles.menu}>Categories</MenuItem>
-        <MenuItem onClick={handleClose} sx={styles.menu}>Checkout</MenuItem>
+        <Link style={decor} to='/Login'><MenuItem onClick={handleClose} sx={styles.menu}>Login</MenuItem></Link>
+        <Link style={decor} to='/Card'><MenuItem onClick={handleClose} sx={styles.menu}>Cart</MenuItem></Link>
+        <Link style={decor} to='/Catagories'>  <MenuItem onClick={handleClose} sx={styles.menu}>Categories</MenuItem></Link>
+        <Link style={decor} to='/Card2'><MenuItem onClick={handleClose} sx={styles.menu}>Checkout</MenuItem></Link>
        <Link style={decor} to='/productdetails'><MenuItem sx={styles.menu}onClick={handleClose}>Product Details</MenuItem></Link>
       </Menu>
                 <Tab className='list1'  sx={styles.menu} label="Blog" 

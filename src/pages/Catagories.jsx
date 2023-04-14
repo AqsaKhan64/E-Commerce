@@ -1,5 +1,5 @@
 import { Typography, Tab, Grid, Box,Button } from '@mui/material';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+// import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import img5 from '../images/img5.jpg'
 import img4 from '../images/img4.jpeg'
 import img6 from '../images/img6.jpg'
@@ -158,7 +158,7 @@ function Catagories() {
         <Typography style={cardheading} variant='h4'>CATAGORIES</Typography>
         <div style={nav}>
           <Tab style={menu} label="Home" />
-          <ArrowBackIosIcon style={icon} />
+          {/* <ArrowBackIosIcon style={icon} /> */}
           <Tab style={menu} label="CATAGORIES" />
         </div>
       </div>

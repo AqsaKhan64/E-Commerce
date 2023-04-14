@@ -1,6 +1,6 @@
 import { Typography,Tab, Button, Box,Grid } from '@mui/material'
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+// import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+// import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import React from 'react'
 import Nav from '@mui/material/Grid'
 import img3 from '../images/img3.jpeg'
@@ -13,12 +13,10 @@ const cardheading ={
     marginLeft:'60px',
     fontSize:'55px',
     fontWeight:'800',
-    wordSpace:'1.5',
-    // position:'absolute',   
+    wordSpace:'1.5',  
 }
 const nav ={
   marginLeft: "60px",
-  // paddingTop:'175px',
   
 }
 const menu={
@@ -172,7 +170,7 @@ function Card () {
             <Typography style={cardheading} variant='h4'>CART LIST</Typography>
             <Box style={nav}>
               <Tab style={menu} label="Home" />
-              <ArrowBackIosIcon style={icon} />
+              {/* <ArrowBackIosIcon style={icon} /> */}
               <Tab style={menu} label="cart list" />
             </Box>
           </Box>
@@ -248,7 +246,7 @@ function Card () {
       <input type="radio" id="html" value="HTML"/><br></br><br></br>
       <Box style={dropIcon}>
       <Typography variant='h6'>Calculate Shipping </Typography>
-      <ArrowDropDownIcon style={drop}/>
+      {/* <ArrowDropDownIcon style={drop}/> */}
       </Box>
       </Box>
         <br></br>

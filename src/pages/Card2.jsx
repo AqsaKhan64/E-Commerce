@@ -1,5 +1,5 @@
 import { Typography, Tab,Grid,TextField,Button, Box} from '@mui/material';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+// import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
@@ -155,7 +155,7 @@ function Card2() {
         <Typography style={cardheading} variant='h4'>CATAGORIES</Typography>
          <Box style={nav}>
           <Tab style={menu} label="Home" />
-          <ArrowBackIosIcon style={icon} />
+          {/* <ArrowBackIosIcon style={icon} /> */}
           <Tab style={menu} label="CATAGORIES" />
          </Box>
         </Box>

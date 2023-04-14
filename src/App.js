@@ -14,7 +14,6 @@ import Card2 from './pages/Card2'
 import Catagories from './pages/Catagories'
 import './index.css';
 import ReactDOM from "react-dom/client";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import userData from './components/userData.json'
 
@@ -25,19 +24,20 @@ function App() {
    
    <BrowserRouter>
       <Routes>
-      <Route path='home' element={<Home/>} />
-      <Route path="product" element={<Product/>} />
-      <Route path="about" element={<About />} />
-      <Route path="blog" element={<Blog />} />
-      <Route path="blogDetails" element={<BlogDeatails />} />
-      <Route path="elements" element={<Elements />} />
-      <Route path="login" element={<Login />} />
-      <Route path="card" element={<Card />} />
-      <Route path="catagories" element={<Catagories />} />
-      <Route path="card2" element={<Card2 />} />
-      <Route path="productdetails" element={<ProductDetails />} />
-      <Route path="ProductDetailPage" element={<ProductDetailPage />} />
-      <Route path="contact" element={<Contact />} />
+      <Route path='/' element={<Home/>} />
+      <Route path='/home' element={<Home/>} />
+      <Route path="/product" element={<Product/>} />
+      <Route path="/about" element={<About />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blogDetails" element={<BlogDeatails />} />
+      <Route path="/elements" element={<Elements />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/card" element={<Card />} />
+      <Route path="/catagories" element={<Catagories />} />
+      <Route path="/card2" element={<Card2 />} />
+      <Route path="/productdetails" element={<ProductDetails />} />
+      <Route path="/ProductDetailPage" element={<ProductDetailPage />} />
+      <Route path="/contact" element={<Contact />} />
 
       </Routes>
     </BrowserRouter>

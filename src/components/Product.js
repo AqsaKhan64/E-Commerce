@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import NavBar from './NavBar'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Box'
-import img2 from '../images/bg.webp'
+// import img2 from '../images/bg.webp'
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea'
 import CardContent from '@mui/material/CardContent';
@@ -15,7 +15,8 @@ import Footer from './Footer';
 import Data from './data.json'
 import Data2 from './data2.json'
 import Data3 from './Data3.json'
-import Data4 from './data4.json'
+import Data4 from './data4.json';
+// import toast from "react-hot-toast"
 const products={
   textAlign: "center",
   marginTop: "200px",
@@ -49,6 +50,12 @@ const sec3Btn={
 }
 const sList={
   marginLeft: "25px"
+}
+const banBtn={
+  background: "#FD8F5F",
+  color: "white",
+  padding: "14px 45px",
+  marginTop: "20px"
 }
 const style={
   root:{
@@ -94,6 +101,9 @@ function Product() {
   })
 
  console.log(onSearch)
+
+
+
   return (
     <div>
      <Grid>
@@ -223,6 +233,7 @@ function Product() {
       <Box className='subBtn' style={sec3Btn}>
         <Button sx={style.root}>Discover More</Button>
       </Box>
+      <Button style={banBtn}>ADD TO CART</Button>
      </Grid>
     </Grid>
     <Grid data-aos="fade-up">

@@ -17,6 +17,8 @@ import img8 from '../images/person2.webp'
 import img9 from '../images/person3.webp'
 import Footer from './Footer';
 import NavBar from './NavBar';
+
+
   const aboutBan={
     
     backgroundImage: `url(${img2})`,
@@ -107,7 +109,8 @@ import NavBar from './NavBar';
     fontSize: "11px",
    }
 function ProductDetails() {
-    const [count,setCount]=useState(0)
+    const [count,setCount]=useState(0);
+    
   return (
     <>
     <Grid>

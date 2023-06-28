@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Grid from '@mui/material/Grid';
 import Menu from '@mui/material/Menu';
 import Box from '@mui/material/Box'
+import { Button } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Toolbar from '@mui/material/Toolbar';
 import Tab from '@mui/material/Tab';
@@ -10,7 +11,9 @@ import img1 from '../images/logo.png.webp'
 import img2 from '../images/bg.webp'
 import cartImg from '../images/card.svg'
 import { Link } from 'react-router-dom';
-import ProductDetails from './ProductDetails';
+import { useCart } from '../pages/cart';
+// import ProductDetails from './ProductDetails';
+import Badge from '@mui/material/Badge';
 
 const Mainnav={
     backgroundColor: "#F2E1D9",
@@ -62,7 +65,7 @@ const Mainnav={
   const acount={
     color: "black",
     fontWeight: "bold",
-    marginTop: "19px"
+    marginTop: "3px"
   }
   const mainAcount={
     display: "flex",
@@ -95,12 +98,20 @@ const Mainnav={
     marginLeft: "28px",
     marginTop: "11px"
   }
+  const logbtn = {
+    backgroundColor:'#FD8F5F',
+    padding:'10px',
+    marginLeft:'110px',
+    marginTop:'5px',
+    color:'white',
+    fontSize:'16px',
+   }
+   
 
 function NavBar() {
   
   const [anchorEl, setAnchorEl] = useState(null);
   const [menu1, setMenu] = useState(null);
-
   function handleClick(event) {
     if (anchorEl !== event.currentTarget) {
       setAnchorEl(event.currentTarget);
@@ -119,12 +130,14 @@ function NavBar() {
   function MenuClose() {
     setMenu(null);
   }
-  
+  const handleLogout = () => {
+		localStorage.removeItem("token");
+		window.location.reload();
+	};
+ 
   return (
     <div>
-     
-     
-        <Grid item container>
+     <Grid item container>
      <Grid item sm={12} className='mainNav'>
      <Toolbar style={Mainnav} className='main-nav'>
             <img className="Logo" src={img1} style={logo}/>
@@ -154,24 +167,19 @@ function NavBar() {
         MenuListProps={{ onMouseLeave: handleClose }}
         
       >
-    
     <Link style={decor} to='/login'><MenuItem onClick={handleClose} sx={styles.menu}>Login</MenuItem></Link>
- 
+    <Link style={decor} to='/SignUp'><MenuItem onClick={handleClose} sx={styles.menu}>SignUp</MenuItem></Link>
     <Link style={decor} to='/card'>  <MenuItem onClick={handleClose} sx={styles.menu}>Cart</MenuItem></Link>
     <Link style={decor} to='/catagories'> <MenuItem onClick={handleClose} sx={styles.menu}>Categories</MenuItem></Link>
     <Link style={decor} to='/card2'> <MenuItem onClick={handleClose} sx={styles.menu}>Checkout</MenuItem></Link>
        <Link style={decor} to='/productdetails'><MenuItem sx={styles.menu}onClick={handleClose}>Product Details</MenuItem></Link>
       </Menu>
-                <Tab className='list1'  sx={styles.menu} label="Blog" 
-                aria-owns={menu1 ? "simple-menu1" : undefined}
-                aria-haspopup="true"
-                onClick={MenuClick}
-                onMouseOver={MenuClick}
-               
-                
+               <Tab className='list1'  sx={styles.menu} label="Blog" 
+               aria-owns={menu1 ? "simple-menu1" : undefined}
+               aria-haspopup="true"
+               onClick={MenuClick}
+               nMouseOver={MenuClick}
                 />
-                 
-                 
                 <Menu
         style={items}
         // id="simple-menu"
@@ -192,19 +200,18 @@ function NavBar() {
                 <Tab className='list1' sx={styles.menu}  label="Contact"/>
           </Link>
               </Typography>
-            
-      
               <Box style={mainAcount} className='acount'>
                 <Typography className='aount1'  style={acount}>My Account</Typography>
-                <Box style={mainShop}>
+                {/* <Box style={mainShop}>
                   <img style={shopImg} src={cartImg}/>
-                  <span style={shop}>0</span>
-                </Box>
+                  <span style={shop}>0</span> 
+                </Box> */}
               </Box>
+              <Button style={logbtn} className='btn' onClick={handleLogout}>Logout</Button>
             </Toolbar>
      </Grid>
     </Grid>
-    {/* <h1>valuwe</h1> */}
+    {/* <h1>valuwe</h1> */}  
     </div>
   )
 }

@@ -15,13 +15,15 @@ import Catagories from './pages/Catagories'
 import './index.css';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignUp from './pages/SignUp';
+import { CartProvider } from './pages/cart';
+
 // import userData from './components/userData.json'
 
 function App() {
   
   return (
     <>
-   
    <BrowserRouter>
       <Routes>
       <Route path='/' element={<Home/>} />
@@ -32,6 +34,7 @@ function App() {
       <Route path="/blogDetails" element={<BlogDeatails />} />
       <Route path="/elements" element={<Elements />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/SignUp" element={<SignUp />} />
       <Route path="/card" element={<Card />} />
       <Route path="/catagories" element={<Catagories />} />
       <Route path="/card2" element={<Card2 />} />
@@ -41,7 +44,6 @@ function App() {
 
       </Routes>
     </BrowserRouter>
-    
     </>
   );
 }

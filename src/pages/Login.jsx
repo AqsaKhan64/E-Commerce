@@ -52,13 +52,13 @@ const box = {
   paddingTop: '20px',
   marginLeft: '28px',
 }
-const link = {
-  float: 'right',
-  color: '#FD8F5F',
-  fontSize: '17px',
-  marginRight: '60px',
-  paddingTop: '10px',
-}
+// const link = {
+//   float: 'right',
+//   color: '#FD8F5F',
+//   fontSize: '17px',
+//   marginRight: '60px',
+//   paddingTop: '10px',
+// }
 const loginFooter = {
   paddingTop: '40px',
   marginLeft: '30px',

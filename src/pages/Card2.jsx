@@ -27,12 +27,12 @@ const cardheading = {
     fontWeight: "bold",
     fontSize: "17px"
   }
-  const icon = {
-    color: 'white',
-    position: 'absolute',
-    paddingTop: '12px',
-    left: '145px',
-  }
+  // const icon = {
+  //   color: 'white',
+  //   position: 'absolute',
+  //   paddingTop: '12px',
+  //   left: '145px',
+  // }
   const CheckTitle={
     paddingTop:'180px',
   }
